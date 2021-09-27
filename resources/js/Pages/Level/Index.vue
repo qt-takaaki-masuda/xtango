@@ -1,0 +1,84 @@
+<template>
+  <app-layout title="LEVEL">
+    <template #header>
+      <ul class="flex text-gray-500 text-sm lg:text-base">
+        <li class="inline-flex items-center">
+          <inertia-link :href="route('dashboard')" replace>Dashboard</inertia-link>
+          <svg class="h-5 w-auto text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+          </svg>
+        </li>
+        <li class="inline-flex items-center">
+          <inertia-link :href="route('level.index', tango.id)" replace>{{ tango.title }}</inertia-link>
+        </li>
+      </ul>
+    </template>
+
+    <div>
+      <div class="py-1">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mb-12">
+          <article>
+            <section class="mt-6 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
+              <article v-for="level in levels" v-bind:key="level.id" class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out" v-bind:style="'background-image: url(\'' + tango.image_file_name + '\');'">
+                <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                  <h3 class="text-center">
+                    <inertia-link :href="route('section.index', level.id)" class="text-white text-2xl font-bold text-center">
+                      <span class="absolute inset-0"></span>
+                        {{ level.title }}
+                    </inertia-link>
+                  </h3>
+                </div>
+              </article>
+            </section>
+          </article>
+        </section>
+
+        <!-- <section class="text-gray-600 body-font">
+          <div class="container px-5 py-5 mx-auto">
+            <div class="flex flex-wrap -m-4">
+              <div class="p-4 md:w-1/3" v-for="level in levels" v-bind:key="level.id">
+                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                  <div class="p-6">
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{ level.title }}</h1>
+                    <div class="flex items-center flex-wrap ">
+                      <inertia-link :href="route('section.index', level.id)" class="py-2 px-4 bg-pink-600 hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full" replace>Start
+                        <svg class="w-4 h-4 ml-2 inline-block" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                      </inertia-link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+      </div>
+    </div>
+  </app-layout>
+</template>
+
+<script>
+import { defineComponent } from "vue";
+import AppLayout from "@/Layouts/AppLayout.vue";
+
+export default defineComponent({
+  props: {
+    modes: {
+      type: Array,
+    },
+    levels: {
+      type: Array,
+    },
+    tango: {
+      type: Array,
+    },
+  },
+
+  components: {
+    AppLayout,
+  },
+});
+</script>

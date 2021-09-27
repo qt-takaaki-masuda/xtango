@@ -1,0 +1,90 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class LevelSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('levels')->insert([
+            [
+                'tango_id' => 1,
+                'title' => 'LEVEL1',
+                'sort' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'tango_id' => 1,
+                'title' => 'LEVEL2',
+                'sort' => 2,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'tango_id' => 1,
+                'title' => 'LEVEL3',
+                'sort' => 3,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'tango_id' => 1,
+                'title' => 'LEVEL4',
+                'sort' => 4,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'tango_id' => 1,
+                'title' => 'LEVEL5',
+                'sort' => 5,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'tango_id' => 2,
+                'title' => 'LEVEL1',
+                'sort' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'tango_id' => 2,
+                'title' => 'LEVEL2',
+                'sort' => 2,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'tango_id' => 2,
+                'title' => 'LEVEL3',
+                'sort' => 3,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'tango_id' => 2,
+                'title' => 'LEVEL4',
+                'sort' => 4,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'tango_id' => 2,
+                'title' => 'LEVEL5',
+                'sort' => 5,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]
+        ]);
+    }
+}
