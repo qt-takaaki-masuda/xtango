@@ -59,17 +59,6 @@
                   </div>
               </div>
           </div>
-          <!-- <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-            <div v-if="mode == 1">
-              {{ word.word }}<br>
-              <span v-html="formatMeaning(word.meaning)"></span>
-            </div>
-            <div v-else>
-              <span v-html="formatMeaning(word.meaning)"></span>
-              {{ word.word }}
-            </div>
-            <button @click="answer">答え</button>
-          </div> -->
         </section>
       </div>
     </div>
