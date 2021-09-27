@@ -68,6 +68,10 @@ class WordController extends Controller
 
         // 先頭の1つを取り出したあと、残りをセッションに保存する。
         $word = array_shift($words);
+
+        // 音声ファイルのURL生成
+        $word->audio_url = sprintf('/audio/tango_%d/level_%d/%s', $word->tango_id, $word->level_id, $word->audio_url);
+
         $request->session()->put('words', $words);
 
         return Inertia::render('Word/Index', ['word' => $word, 'mode' => $mode]);

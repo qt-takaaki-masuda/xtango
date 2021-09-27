@@ -33,7 +33,7 @@
               <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-6 px-4 sm:px-6 lg:py-6 lg:px-8 z-20">
                   <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
                       <span v-show="mode == 1" id="word" class="block mb-3">
-                          {{ word.word }}
+                          {{ word.word }}<button @click="playMp3(word.audio_url)"><VolumeUpIcon class="h-7 w-7 ml-6 inline"/></button>
                       </span>
                       <span v-show="mode == 2" id="word-mask" class="block mb-3">
                           ？？？？？？？
@@ -68,6 +68,7 @@
 <script>
 import { defineComponent } from "vue";
 import AppLayout from "@/Layouts/AppLayout.vue";
+import { VolumeUpIcon } from '@heroicons/vue/solid'
 
 export default defineComponent({
   props: {
@@ -81,6 +82,7 @@ export default defineComponent({
 
   components: {
     AppLayout,
+    VolumeUpIcon,
   },
 
   methods: {
@@ -106,6 +108,11 @@ export default defineComponent({
     // Nextボタンイベント
     nextWord() {
       location.reload();
+    },
+    // MP3再生
+    playMp3(url) {
+      var wordVoice = new Audio(url);
+      wordVoice.play();
     },
   }
 });
