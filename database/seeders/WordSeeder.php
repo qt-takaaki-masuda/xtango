@@ -45,7 +45,7 @@ class WordSeeder extends Seeder
             //     'meaning' => json_encode([
             //         '<span class="kakomu">代</span>私は[が]'
             //     ]),
-            //     'audio_url' => 'i.mp3',
+            //     'audio_url' => 'I.mp3',
             //     'created_at' => date('Y-m-d H:i:s'),
             //     'updated_at' => date('Y-m-d H:i:s'),
             // ],
