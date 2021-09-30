@@ -2302,6 +2302,9 @@ select {
 .disabled\:opacity-25:disabled {
 	opacity: 0.25;
 }
+.disabled\:opacity-50:disabled {
+	opacity: 0.5;
+}
 .group:hover .group-hover\:opacity-75 {
 	opacity: 0.75;
 }

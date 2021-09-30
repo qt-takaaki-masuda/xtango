@@ -32,7 +32,7 @@ class WordLevel32Seeder extends Seeder
                 'word' => 'foot',
                 'meaning' => json_encode([
                     '<span class="kakomu">名</span>足',
-                    '<span class="indent">フィート[約30cm]',
+                    '<span class="indent"></span>フィート[約30cm]',
                 ]),
                 'audio_url' => 'foot.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -124,8 +124,8 @@ class WordLevel32Seeder extends Seeder
                 'word' => 'miss',
                 'meaning' => json_encode([
                     '<span class="kakomu">動</span>〜に乗り遅れる',
-                    '<span class="indent">(機会)をのがす',
-                    '<span class="indent">〜がいなくてさびしい',
+                    '<span class="indent"></span>(機会)をのがす',
+                    '<span class="indent"></span>〜がいなくてさびしい',
                 ]),
                 'audio_url' => 'miss.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -146,7 +146,7 @@ class WordLevel32Seeder extends Seeder
                 'word' => 'effect',
                 'meaning' => json_encode([
                     '<span class="kakomu">名</span>効果',
-                    '<span class="indent">結果',
+                    '<span class="indent"></span>結果',
                 ]),
                 'audio_url' => 'effect.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -177,7 +177,7 @@ class WordLevel32Seeder extends Seeder
                 'word' => 'set',
                 'meaning' => json_encode([
                     '<span class="kakomu">動</span>〜を定める、置く',
-                    '<span class="indent">(太陽・月が)沈む',
+                    '<span class="indent"></span>(太陽・月が)沈む',
                     '<span class="kakomu">名</span>一組',
                 ]),
                 'audio_url' => 'set.mp3',
@@ -189,7 +189,7 @@ class WordLevel32Seeder extends Seeder
                 'word' => 'stage',
                 'meaning' => json_encode([
                     '<span class="kakomu">名</span>舞台、ステージ',
-                    '<span class="indent">段階',
+                    '<span class="indent"></span>段階',
                 ]),
                 'audio_url' => 'stage.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -200,7 +200,7 @@ class WordLevel32Seeder extends Seeder
                 'word' => 'service',
                 'meaning' => json_encode([
                     '<span class="kakomu">名</span>サービス',
-                    '<span class="indent">奉仕',
+                    '<span class="indent"></span>奉仕',
                 ]),
                 'audio_url' => 'service.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -210,9 +210,7 @@ class WordLevel32Seeder extends Seeder
                 'section_id' => 42,
                 'word' => 'satellite',
                 'meaning' => json_encode([
-                    '<span class="kakomu"></span>',
-                    '<span class="kakomu"></span>',
-                    '<span class="indent">',
+                    '<span class="kakomu">名</span>(人工)衛生',
                 ]),
                 'audio_url' => 'satellite.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -223,7 +221,7 @@ class WordLevel32Seeder extends Seeder
                 'word' => 'hurt',
                 'meaning' => json_encode([
                     '<span class="kakomu">動</span>〜を傷つける',
-                    '<span class="indent">痛む',
+                    '<span class="indent"></span>痛む',
                 ]),
                 'audio_url' => 'hurt.mp3',
                 'created_at' => date('Y-m-d H:i:s'),

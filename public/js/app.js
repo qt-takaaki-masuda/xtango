@@ -41870,6 +41870,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/index.js");
 
 
+ //import { unmounted } from 'vue'
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
   props: {
@@ -41880,9 +41881,21 @@ __webpack_require__.r(__webpack_exports__);
       type: String
     }
   },
+  data: function data() {
+    return {
+      passSec: 0,
+      start: 0,
+      end: 0,
+      isActive: false
+    };
+  },
   components: {
     AppLayout: _Layouts_AppLayout_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     VolumeUpIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_2__.VolumeUpIcon
+  },
+  mounted: function mounted() {
+    // 開始時間の取得
+    this.start = performance.now();
   },
   methods: {
     // JSON文字列を解析
@@ -41892,6 +41905,10 @@ __webpack_require__.r(__webpack_exports__);
     },
     // Answerボタンイベント
     answer: function answer(mode) {
+      // 経過時間の表示
+      this.calcPassSec();
+      alert(this.passSec + '秒'); // 回答表示
+
       if (mode == 1) {
         var target = document.getElementById('meaning');
         target.style.display = 'block';
@@ -41902,7 +41919,10 @@ __webpack_require__.r(__webpack_exports__);
         target.style.display = 'block';
         var targetMask = document.getElementById('word-mask');
         targetMask.style.display = 'none';
-      }
+      } // ボタンを非活性
+
+
+      this.isActive = true;
     },
     // Nextボタンイベント
     nextWord: function nextWord() {
@@ -41912,6 +41932,16 @@ __webpack_require__.r(__webpack_exports__);
     playMp3: function playMp3(url) {
       var wordVoice = new Audio(url);
       wordVoice.play();
+    },
+    // 経過時間算出
+    calcPassSec: function calcPassSec() {
+      if (this.passSec == 0) {
+        // 終了時間の取得
+        this.end = performance.now();
+        this.passSec = (this.end - this.start) / 1000; // 少数第二位を切り捨て
+
+        this.passSec = Math.floor(this.passSec * 100) / 100;
+      }
     }
   }
 }));
@@ -46624,7 +46654,8 @@ var _hoisted_20 = {
 var _hoisted_21 = {
   "class": "inline-flex rounded-md shadow"
 };
-var _hoisted_22 = {
+var _hoisted_22 = ["disabled"];
+var _hoisted_23 = {
   "class": "ml-3 inline-flex rounded-md shadow"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -46705,11 +46736,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* NEED_PATCH */
       ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, _ctx.mode == 1]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
         type: "button",
+        disabled: _ctx.isActive,
         onClick: _cache[1] || (_cache[1] = function ($event) {
           return _ctx.answer(_ctx.mode);
         }),
-        "class": "py-4 px-6 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
-      }, " Answer ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+        "class": "py-4 px-6 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 disabled:opacity-50 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+      }, " Answer ", 8
+      /* PROPS */
+      , _hoisted_22)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
         type: "button",
         onClick: _cache[2] || (_cache[2] = function ($event) {
           return _ctx.nextWord();

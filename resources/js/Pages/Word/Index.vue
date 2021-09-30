@@ -47,7 +47,7 @@
                   </h2>
                   <div class="lg:mt-0 lg:flex-shrink-0">
                       <div class=" inline-flex rounded-md shadow">
-                          <button type="button" @click="answer(mode)" class="py-4 px-6  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                          <button type="button" v-bind:disabled="isActive" @click="answer(mode)" class="py-4 px-6 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 disabled:opacity-50 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                               Answer
                           </button>
                       </div>
@@ -66,9 +66,10 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
-import AppLayout from "@/Layouts/AppLayout.vue";
+import { defineComponent } from 'vue';
+import AppLayout from '@/Layouts/AppLayout.vue';
 import { VolumeUpIcon } from '@heroicons/vue/solid'
+//import { unmounted } from 'vue'
 
 export default defineComponent({
   props: {
@@ -79,10 +80,24 @@ export default defineComponent({
       type: String,
     }
   },
+  
+  data() {
+    return {
+      passSec: 0,
+      start: 0,
+      end: 0,
+      isActive: false,
+    }
+  },
 
   components: {
     AppLayout,
     VolumeUpIcon,
+  },
+
+  mounted() {
+    // 開始時間の取得
+    this.start = performance.now();
   },
 
   methods: {
@@ -93,6 +108,10 @@ export default defineComponent({
     },
     // Answerボタンイベント
     answer(mode) {
+      // 経過時間の表示
+      this.calcPassSec();
+      alert(this.passSec+'秒');
+      // 回答表示
       if (mode == 1) {
         var target = document.getElementById('meaning');
         target.style.display = 'block';
@@ -104,6 +123,8 @@ export default defineComponent({
         var targetMask = document.getElementById('word-mask');
         targetMask.style.display = 'none';
       }
+      // ボタンを非活性
+      this.isActive = true;
     },
     // Nextボタンイベント
     nextWord() {
@@ -114,6 +135,16 @@ export default defineComponent({
       var wordVoice = new Audio(url);
       wordVoice.play();
     },
+    // 経過時間算出
+    calcPassSec() {
+      if (this.passSec == 0) {
+        // 終了時間の取得
+        this.end = performance.now();
+        this.passSec = (this.end - this.start) / 1000;
+        // 少数第二位を切り捨て
+        this.passSec = Math.floor(this.passSec * 100) / 100;
+      }
+    }
   }
 });
 </script>
