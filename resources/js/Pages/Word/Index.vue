@@ -149,7 +149,7 @@ export default defineComponent({
       try {
         var token = document.head.querySelector('meta[name="csrf-token"]');
         let answerData = {
-          word_id: word.id,
+          word_id: this.word.id,
           answer_time: this.answerTime,
           // _token: token.content,
         };
