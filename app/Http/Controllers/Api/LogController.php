@@ -32,6 +32,8 @@ class LogController extends Controller
             'word_id' => $request->input('word_id'),
             'user_id' => Auth::id(),
             'answer_time' => $request->input('answer_time'),
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
         return response()->json(['success'=>'Added new records.']);
