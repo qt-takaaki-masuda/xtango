@@ -35,3 +35,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/level/{id}',[App\Http\Con
 Route::middleware(['auth:sanctum', 'verified'])->get('/section/{id}',[App\Http\Controllers\SectionController::class, 'index'])->name('section.index');
 // 単語 → 意味
 Route::middleware(['auth:sanctum', 'verified'])->get('/word/{mode}/{id}',[App\Http\Controllers\WordController::class, 'index'])->name('word.index');
+// 回答時間保存
+Route::middleware(['auth:sanctum', 'verified'])->post('/api/log/saveAnswerTime',[App\Http\Controllers\Api\LogController::class, 'saveAnswerTime'])->name('log.saveAnswerTime');

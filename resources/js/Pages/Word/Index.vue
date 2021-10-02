@@ -31,20 +31,23 @@
         <section class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-4 mb-12">
           <div class="bg-white dark:bg-gray-800 shadow-xl sm:rounded-lg my-2">
               <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-6 px-4 sm:px-6 lg:py-6 lg:px-8 z-20">
-                  <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
+                  <div class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
                       <span v-show="mode == 1" id="word" class="block mb-3">
-                          {{ word.word }}<button @click="playMp3(word.audio_url)"><VolumeUpIcon class="h-7 w-7 ml-6 inline"/></button>
+                          {{ word.word }}<button v-if="word.audio_url.length" @click="playMp3(word.audio_url)"><VolumeUpIcon class="h-7 w-7 ml-6 inline"/></button>
                       </span>
                       <span v-show="mode == 2" id="word-mask" class="block mb-3">
                           ？？？？？？？
                       </span>
-                      <span v-show="mode == 2" id="meaning" class="block text-indigo-500 mb-3">
+                      <span v-show="mode == 2" id="meaning" class="block text-2xl text-indigo-500 mb-3">
                           <span v-html="formatMeaning(word.meaning)"></span>
                       </span>
-                      <span v-show="mode == 1" id="meaning-mask" class="block text-indigo-500 mb-3">
+                      <span v-show="mode == 1" id="meaning-mask" class="block text-2xl text-indigo-500 mb-3">
                           ？？？？？？？
                       </span>
-                  </h2>
+                      <span v-if="answerTime != 0" id="meaning-mask" class="block text-sm my-4">
+                          (回答時間：{{ answerTime }}秒)
+                      </span>
+                  </div>
                   <div class="lg:mt-0 lg:flex-shrink-0">
                       <div class=" inline-flex rounded-md shadow">
                           <button type="button" v-bind:disabled="isActive" @click="answer(mode)" class="py-4 px-6 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 disabled:opacity-50 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
@@ -69,7 +72,6 @@
 import { defineComponent } from 'vue';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { VolumeUpIcon } from '@heroicons/vue/solid'
-//import { unmounted } from 'vue'
 
 export default defineComponent({
   props: {
@@ -83,7 +85,7 @@ export default defineComponent({
   
   data() {
     return {
-      passSec: 0,
+      answerTime: 0,
       start: 0,
       end: 0,
       isActive: false,
@@ -108,9 +110,8 @@ export default defineComponent({
     },
     // Answerボタンイベント
     answer(mode) {
-      // 経過時間の表示
-      this.calcPassSec();
-      alert(this.passSec+'秒');
+      // 回答時間の表示
+      this.calcAnswerTime();
       // 回答表示
       if (mode == 1) {
         var target = document.getElementById('meaning');
@@ -135,14 +136,34 @@ export default defineComponent({
       var wordVoice = new Audio(url);
       wordVoice.play();
     },
-    // 経過時間算出
-    calcPassSec() {
-      if (this.passSec == 0) {
+    // 回答間算出
+    calcAnswerTime() {
+      if (this.answerTime == 0) {
         // 終了時間の取得
         this.end = performance.now();
-        this.passSec = (this.end - this.start) / 1000;
+        this.answerTime = (this.end - this.start) / 1000;
         // 少数第二位を切り捨て
-        this.passSec = Math.floor(this.passSec * 100) / 100;
+        this.answerTime = Math.floor(this.answerTime * 100) / 100;
+      }
+      // 回答時間を保存
+      try {
+        var token = document.head.querySelector('meta[name="csrf-token"]');
+        let answerData = {
+          word_id: word.id,
+          answer_time: this.answerTime,
+          // _token: token.content,
+        };
+        // let response = fetch('/word/saveAnswerTime/'+word.id+'/'+this.answerTime);
+        let response = fetch('/api/log/saveAnswerTime', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+            'X-CSRF-TOKEN': token.content
+          },
+          body: JSON.stringify(answerData)
+        });
+      } catch (error) {
+        console.log(error.message);
       }
     }
   }
