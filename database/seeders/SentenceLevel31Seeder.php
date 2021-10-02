@@ -79,9 +79,9 @@ class SentenceLevel31Seeder extends Seeder
             ],
             [
                 'section_id' => 131,
-                'word' => 'Is the temperature in this room good for you.',
+                'word' => 'Is the temperature in this room good for you?',
                 'meaning' => json_encode([
-                    'この部屋の温度はあなたにとって快適ですか。',
+                    'この部屋の温度はあなたにとって快適ですか？',
                 ]),
                 'audio_url' => '807.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
