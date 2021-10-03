@@ -9,40 +9,46 @@ use Inertia\Inertia;
 
 class WordController extends Controller
 {
-    /**
-     * 単語 → 意味
-     *
-     * @param Request $request
-     * @param integer $sectionlId
-     * @return void
-     */
-    public function w2m(Request $request, $sectionlId)
-    {
-        $this->index($request, $sectionlId, 'w2m');
-    }
+    // /**
+    //  * 単語 → 意味
+    //  *
+    //  * @param Request $request
+    //  * @param integer $sectionlId
+    //  * @return void
+    //  */
+    // public function w2m(Request $request, $sectionlId)
+    // {
+    //     $this->index($request, $sectionlId, 'w2m');
+    // }
+
+    // /**
+    //  * 意味 → 単語
+    //  *
+    //  * @param Request $request
+    //  * @param integer $sectionlId
+    //  * @return void
+    //  */
+    // public function m2w(Request $request, $sectionlId)
+    // {
+    //     $this->index($request, $sectionlId, 'm2w');
+    // }
 
     /**
-     * 意味 → 単語
+     * セクションをキーにランダムに単語データを取得
      *
      * @param Request $request
+     * @param integer $mode
      * @param integer $sectionlId
+     * @param integer $answerdWordId
+     * @param float $answerTime
+     * @param boolean $isCorrect
      * @return void
      */
-    public function m2w(Request $request, $sectionlId)
+    public function index(Request $request, $mode, $sectionlId, $answerdWordId = null, $answerTime = null, $isCorrect = null)
     {
-        $this->index($request, $sectionlId, 'm2w');
-    }
+        // 回答ログに保存
+        $this->saveAnswerLog($answerdWordId, $answerTime, $isCorrect);
 
-    /**
-     * レベルをキーにランダムに単語データを取得
-     *
-     * @param Request $request
-     * @param string $mode
-     * @param integer $sectionlId
-     * @return void
-     */
-    public function index(Request $request, $mode, $sectionlId)
-    {
         // セッションから取得
         $words = $request->session()->get('words');
 
@@ -69,11 +75,62 @@ class WordController extends Controller
         // 先頭の1つを取り出したあと、残りをセッションに保存する。
         $word = array_shift($words);
 
+        // 残りの単語をセッションに保存
+        $request->session()->put('words', $words);
+
         // 音声ファイルのURL生成
         $word->audio_url = sprintf('/audio/tango_%d/level_%d/%s', $word->tango_id, $word->level_id, $word->audio_url);
 
-        $request->session()->put('words', $words);
+        // 対象の単語が過去に間違ったことがあるか？
+        list($correctCount, $incorrectCount) = $this->getCorrectCount($word->id);
 
-        return Inertia::render('Word/Index', ['word' => $word, 'mode' => $mode]);
+        return Inertia::render('Word/Index', ['word' => $word, 'mode' => $mode, 'correctCount' => $correctCount, 'incorrectCount' => $incorrectCount]);
+    }
+
+    /**
+     * 回答ログに保存
+     *
+     * @param integer $wordId
+     * @param float $answerTime
+     * @param boolean $isCorrect
+     * @return void
+     */
+    private function saveAnswerLog($wordId, $answerTime, $isCorrect)
+    {
+        if (empty($wordId) || empty($answerTime)) {
+            return;
+        }
+
+        DB::table('answer_time_logs')->insertOrIgnore([
+            'word_id' => $wordId,
+            'user_id' => Auth::id(),
+            'answer_time' => $answerTime,
+            'is_correct' => $isCorrect,
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+    }
+
+    /**
+     * 対象の単語が過去に間違ったことがあるか？
+     *
+     * @param [type] $wordId
+     * @return boolean
+     */
+    private function getCorrectCount($wordId)
+    {
+        $correctCount = DB::table('answer_time_logs')
+            ->where('answer_time_logs.user_id', Auth::id())
+            ->where('answer_time_logs.word_id', $wordId)
+            ->where('answer_time_logs.is_correct', 1)
+            ->count();
+
+        $incorrectCount = DB::table('answer_time_logs')
+            ->where('answer_time_logs.user_id', Auth::id())
+            ->where('answer_time_logs.word_id', $wordId)
+            ->where('answer_time_logs.is_correct', 0)
+            ->count();
+
+        return [$correctCount, $incorrectCount];
     }
 }

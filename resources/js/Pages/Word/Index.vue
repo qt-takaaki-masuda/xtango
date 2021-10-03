@@ -33,30 +33,41 @@
               <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-6 px-4 sm:px-6 lg:py-6 lg:px-8 z-20">
                   <div class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
                       <span v-show="mode == 1" id="word" class="block mb-3">
-                          {{ word.word }}<button v-if="word.audio_url.length" @click="playMp3(word.audio_url)"><VolumeUpIcon class="h-7 w-7 ml-6 inline"/></button>
+                        {{ word.word }}<button v-if="word.audio_url.length" @click="playMp3(word.audio_url)"><VolumeUpIcon class="h-7 w-7 ml-6 inline"/></button>
                       </span>
                       <span v-show="mode == 2" id="word-mask" class="block mb-3">
-                          ？？？？？？？
+                        ？？？？？？？
                       </span>
                       <span v-show="mode == 2" id="meaning" class="block text-2xl text-indigo-500 mb-3">
-                          <span v-html="formatMeaning(word.meaning)"></span>
+                        <span v-html="formatMeaning(word.meaning)"></span>
                       </span>
                       <span v-show="mode == 1" id="meaning-mask" class="block text-2xl text-indigo-500 mb-3">
-                          ？？？？？？？
+                        ？？？？？？？
+                      </span>
+                      <span class="block text-sm my-4">
+                        (正解数：{{ correctCount }}回／不正回数：{{ incorrectCount }}回)
                       </span>
                       <span v-if="answerTime != 0" id="meaning-mask" class="block text-sm my-4">
-                          (回答時間：{{ answerTime }}秒)
+                        (回答時間：{{ answerTime }}秒)
                       </span>
                   </div>
                   <div class="lg:mt-0 lg:flex-shrink-0">
                       <div class=" inline-flex rounded-md shadow">
-                          <button type="button" v-bind:disabled="isActive" @click="answer(mode)" class="py-4 px-6 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 disabled:opacity-50 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                              Answer
+                          <button type="button" v-show="isAnsered == false" @click="answer(mode)" class="py-4 px-6 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 disabled:opacity-50 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
+                            <TagIcon class="fill-current w-6 h-6 mr-2 text-white inline"/>
+                            答え
                           </button>
                       </div>
                       <div class="ml-3 inline-flex rounded-md shadow">
-                          <button type="button" @click="nextWord()" class="py-4 px-6  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                              Next
+                          <button type="button" v-show="isAnsered == true" @click="nextWord(1)" class="py-4 px-6 bg-green-400 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
+                            <CheckCircleIcon class="fill-current w-6 h-6 mr-2 text-white inline"/>
+                            正解だった
+                          </button>
+                      </div>
+                      <div class="ml-3 inline-flex rounded-md shadow">
+                          <button type="button" v-show="isAnsered == true" @click="nextWord(0)" class="py-4 px-6 bg-red-400 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
+                            <XCircleIcon class="fill-current w-6 h-6 mr-2 text-white inline"/>
+                            不正解だった
                           </button>
                       </div>
                   </div>
@@ -71,7 +82,7 @@
 <script>
 import { defineComponent } from 'vue';
 import AppLayout from '@/Layouts/AppLayout.vue';
-import { VolumeUpIcon } from '@heroicons/vue/solid'
+import { VolumeUpIcon, TagIcon, CheckCircleIcon, XCircleIcon } from '@heroicons/vue/solid'
 
 export default defineComponent({
   props: {
@@ -79,6 +90,12 @@ export default defineComponent({
       type: Array,
     },
     mode: {
+      type: String,
+    },
+    correctCount: {
+      type: String,
+    },
+    incorrectCount: {
       type: String,
     }
   },
@@ -88,13 +105,16 @@ export default defineComponent({
       answerTime: 0,
       start: 0,
       end: 0,
-      isActive: false,
+      isAnsered: false,
     }
   },
 
   components: {
     AppLayout,
     VolumeUpIcon,
+    TagIcon,
+    CheckCircleIcon,
+    XCircleIcon
   },
 
   mounted() {
@@ -125,11 +145,12 @@ export default defineComponent({
         targetMask.style.display = 'none';
       }
       // ボタンを非活性
-      this.isActive = true;
+      this.isAnsered = true;
     },
     // Nextボタンイベント
-    nextWord() {
-      location.reload();
+    nextWord(isCorrect) {
+      // location.reload();
+      this.$inertia.get(route('word.index', [this.mode, this.word.section_id, this.word.id, this.answerTime, isCorrect]));
     },
     // MP3再生
     playMp3(url) {
@@ -144,26 +165,6 @@ export default defineComponent({
         this.answerTime = (this.end - this.start) / 1000;
         // 少数第二位を切り捨て
         this.answerTime = Math.floor(this.answerTime * 100) / 100;
-      }
-      // 回答時間を保存
-      try {
-        var token = document.head.querySelector('meta[name="csrf-token"]');
-        let answerData = {
-          word_id: this.word.id,
-          answer_time: this.answerTime,
-          // _token: token.content,
-        };
-        // let response = fetch('/word/saveAnswerTime/'+word.id+'/'+this.answerTime);
-        let response = fetch('/api/log/saveAnswerTime', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json;charset=utf-8',
-            'X-CSRF-TOKEN': token.content
-          },
-          body: JSON.stringify(answerData)
-        });
-      } catch (error) {
-        console.log(error.message);
       }
     }
   }
