@@ -32,10 +32,10 @@
           <div class="bg-white dark:bg-gray-800 shadow-xl sm:rounded-lg my-2">
               <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-6 px-4 sm:px-6 lg:py-6 lg:px-8 z-20">
                   <div class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
-                      <span v-show="mode == 1" id="word" class="block mb-3">
-                        {{ word.word }}<button v-if="word.audio_url.length" @click="playMp3(word.audio_url)"><VolumeUpIcon class="h-7 w-7 ml-6 inline"/></button>
+                      <span v-show="mode == 1" id="word" class="block mb-3 text-2xl">
+                        <span v-html="word.word"></span><button v-if="word.audio_url.length" @click="playMp3(word.audio_url)"><VolumeUpIcon class="h-7 w-7 ml-6 inline"/></button>
                       </span>
-                      <span v-show="mode == 2" id="word-mask" class="block mb-3">
+                      <span v-show="mode == 2" id="word-mask" class="block mb-3 text-2xl">
                         ？？？？？？？
                       </span>
                       <span v-show="mode == 2" id="meaning" class="block text-2xl text-indigo-500 mb-3">

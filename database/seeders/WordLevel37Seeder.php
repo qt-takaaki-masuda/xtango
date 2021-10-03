@@ -209,7 +209,6 @@ class WordLevel37Seeder extends Seeder
                 'word' => 'bookstore',
                 'meaning' => json_encode([
                     '<span class="kakomu">名</span><<米>>書店',
-                    '<span class="kakomu"></span>',
                 ]),
                 'audio_url' => 'bookstore.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -220,7 +219,6 @@ class WordLevel37Seeder extends Seeder
                 'word' => 'impress',
                 'meaning' => json_encode([
                     '<span class="kakomu">動</span>〜を感動させる',
-                    '<span class="kakomu"></span>',
                 ]),
                 'audio_url' => 'impress.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
