@@ -22,7 +22,7 @@
                     <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">TITLE</h2>
                     <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{ tango.title }}</h1>
                     <p class="leading-relaxed mb-3">{{ tango.description }}</p>
-                    <div class="flex items-center flex-wrap ">
+                    <div class="flex items-center flex-wrap">
                       <inertia-link method="get" as="button" type="button" :href="route('level.index', tango.id)" class="py-2 px-4 bg-pink-600 hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-pink-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full" replace>Start
                         <svg class="w-4 h-4 ml-2 inline-block" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M5 12h14"></path>
