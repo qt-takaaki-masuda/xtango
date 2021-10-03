@@ -13,13 +13,12 @@
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-5 mx-auto">
             <div class="flex flex-wrap -m-4">
-              <div class="p-4 md:w-1/3" v-for="tango in tangos" v-bind:key="tango.id">
+              <div class="p-4 md:w-1/4" v-for="tango in tangos" v-bind:key="tango.id">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <inertia-link :href="route('level.index', tango.id)" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" replace>
                     <img class="w-full object-cover object-center" v-bind:src="tango.image_file_name" alt="blog">
                   </inertia-link>
                   <div class="p-6">
-                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">TITLE</h2>
                     <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{ tango.title }}</h1>
                     <p class="leading-relaxed mb-3">{{ tango.description }}</p>
                     <div class="flex items-center flex-wrap">
