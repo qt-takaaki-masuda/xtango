@@ -32,7 +32,7 @@
                 </h2>
                 <div class="lg:mt-0 lg:flex-shrink-0">
                     <div v-for="mode in modes" v-bind:key="mode.id" class="mt-12 mx-1 inline-flex rounded-md shadow">
-                        <inertia-link :href="route('word.index', [mode.mode, section.id, 0, 0, 0])" method="get" as="button" type="button" class="py-4 px-6  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                        <inertia-link :href="route('word.index', [mode.mode, section.id, 0, 0, 0])" method="get" as="button" type="button" class="py-4 px-6  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg" replace>
                             {{ mode.title }}
                         </inertia-link>
                     </div>

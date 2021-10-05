@@ -23,7 +23,7 @@
                 <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
                 <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                   <h3 class="text-center">
-                    <inertia-link :href="route('section.index', level.id)" class="text-white text-2xl font-bold text-center">
+                    <inertia-link :href="route('section.index', level.id)" class="text-white text-2xl font-bold text-center" replace>
                       <span class="absolute inset-0"></span>
                         {{ level.title }}
                     </inertia-link>
