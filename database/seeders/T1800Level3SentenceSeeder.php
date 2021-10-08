@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class SentenceLevel31Seeder extends Seeder
+class T1800Level3SentenceSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -216,6 +216,207 @@ class SentenceLevel31Seeder extends Seeder
                     'アンはなぜパーティーに来なかったのだろうか',
                 ]),
                 'audio_url' => '820.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            // 0821 - 0840
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '821.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '822.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '823.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '824.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '825.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '826.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '827.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '828.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '829.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '830.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '831.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '832.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '833.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '834.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '835.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '836.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '837.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '838.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '839.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 132,
+                'word' => '',
+                'meaning' => json_encode([
+                    '',
+                ]),
+                'audio_url' => '840.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
