@@ -117,114 +117,113 @@ class T1800Level3SentenceSeeder extends Seeder
             //     'created_at' => date('Y-m-d H:i:s'),
             //     'updated_at' => date('Y-m-d H:i:s'),
             // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'English is the world\'s  common language.',
+            //     'meaning' => json_encode([
+            //         '英語は世界の共通語だ。',
+            //     ]),
+            //     'audio_url' => '811.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'There was a ceremony on the first day of school.',
+            //     'meaning' => json_encode([
+            //         '学校の最初の日に式典があった。',
+            //     ]),
+            //     'audio_url' => '812.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'We had delicious school lunch today.',
+            //     'meaning' => json_encode([
+            //         '今日、美味しい給食を食べた。',
+            //     ]),
+            //     'audio_url' => '813.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'What subject do you like the best?',
+            //     'meaning' => json_encode([
+            //         'あなたはどの科目が一番好きですか。',
+            //     ]),
+            //     'audio_url' => '814.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'I exchanged e-mails with him many times.',
+            //     'meaning' => json_encode([
+            //         '私は彼と何度もEメールを交換した。',
+            //     ]),
+            //     'audio_url' => '815.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'Do you put suger in your coffee?',
+            //     'meaning' => json_encode([
+            //         'あなたはコーヒーに砂糖を入れますか。',
+            //     ]),
+            //     'audio_url' => '816.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'Ken looks like an adult when he wears a suit.',
+            //     'meaning' => json_encode([
+            //         'ケンはスーツを着ていると大人のように見える。',
+            //     ]),
+            //     'audio_url' => '817.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'Please write your name with a black pen.',
+            //     'meaning' => json_encode([
+            //         '黒のペンで名前を書いてください。',
+            //     ]),
+            //     'audio_url' => '818.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'Can you show me your notebook?',
+            //     'meaning' => json_encode([
+            //         'あなたのノートを見せてもらえますか？',
+            //     ]),
+            //     'audio_url' => '819.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 131,
+            //     'word' => 'I wonder why Ann didn\'t come to the party.',
+            //     'meaning' => json_encode([
+            //         'アンはなぜパーティーに来なかったのだろうか',
+            //     ]),
+            //     'audio_url' => '820.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
 
-            // 0811 - 0820
-            [
-                'section_id' => 131,
-                'word' => 'English is the world\'s  common language.',
-                'meaning' => json_encode([
-                    '英語は世界の共通語だ。',
-                ]),
-                'audio_url' => '811.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 131,
-                'word' => 'There was a ceremony on the first day of school.',
-                'meaning' => json_encode([
-                    '学校の最初の日に式典があった。',
-                ]),
-                'audio_url' => '812.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 131,
-                'word' => 'We had delicious school lunch today.',
-                'meaning' => json_encode([
-                    '今日、美味しい給食を食べた。',
-                ]),
-                'audio_url' => '813.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 131,
-                'word' => 'What subject do you like the best?',
-                'meaning' => json_encode([
-                    'あなたはどの科目が一番好きですか。',
-                ]),
-                'audio_url' => '814.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 131,
-                'word' => 'I exchanged e-mails with him many times.',
-                'meaning' => json_encode([
-                    '私は彼と何度もEメールを交換した。',
-                ]),
-                'audio_url' => '815.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 131,
-                'word' => 'Do you put suger in your coffee?',
-                'meaning' => json_encode([
-                    'あなたはコーヒーに砂糖を入れますか。',
-                ]),
-                'audio_url' => '816.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 131,
-                'word' => 'Ken looks like an adult when he wears a suit.',
-                'meaning' => json_encode([
-                    'ケンはスーツを着ていると大人のように見える。',
-                ]),
-                'audio_url' => '817.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 131,
-                'word' => 'Please write your name with a black pen.',
-                'meaning' => json_encode([
-                    '黒のペンで名前を書いてください。',
-                ]),
-                'audio_url' => '818.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 131,
-                'word' => 'Can you show me your notebook?',
-                'meaning' => json_encode([
-                    'あなたのノートを見せてもらえますか？',
-                ]),
-                'audio_url' => '819.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 131,
-                'word' => 'I wonder why Ann didn\'t come to the party.',
-                'meaning' => json_encode([
-                    'アンはなぜパーティーに来なかったのだろうか',
-                ]),
-                'audio_url' => '820.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
             // 0821 - 0840
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'Many people <span class="border-b text-red-500">communicate</span> by e-mail.',
                 'meaning' => json_encode([
-                    '',
+                    '多くの人々がEメールで<span class="border-b text-red-500">コミニケーション</span>をとっている。',
                 ]),
                 'audio_url' => '821.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -232,9 +231,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'She injured her right <span class="border-b text-red-500">foot</span> in th tennis match.',
                 'meaning' => json_encode([
-                    '',
+                    '彼女はテニスの試合で右<span class="border-b text-red-500">足</span>を痛めた。',
                 ]),
                 'audio_url' => '822.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -242,9 +241,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'The soup in the pot <span class="border-b text-red-500">smells</span> good.',
                 'meaning' => json_encode([
-                    '',
+                    'そのなべのスープはいい<span class="border-b text-red-500">においがする。</span>',
                 ]),
                 'audio_url' => '823.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -252,9 +251,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'I\'d like to see <span class="border-b text-red-500">Dr.</span> Matsumoto.',
                 'meaning' => json_encode([
-                    '',
+                    'マツモト<span class="border-b text-red-500">先生</span>に診察していただきたいのですが。',
                 ]),
                 'audio_url' => '824.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -262,9 +261,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'I went to an <span class="border-b text-red-500">international</span> festival.',
                 'meaning' => json_encode([
-                    '',
+                    '私は<span class="border-b text-red-500">国際的</span>な祭りに行った。',
                 ]),
                 'audio_url' => '825.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -272,9 +271,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'The store opens at 10:30 <span class="border-b text-red-500">a.m.</span>',
                 'meaning' => json_encode([
-                    '',
+                    'その店は<span class="border-b text-red-500">午前</span>10時30分に開店する。',
                 ]),
                 'audio_url' => '826.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -282,9 +281,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'My father is <span class="border-b text-red-500">against</span> my plan to study abroad.',
                 'meaning' => json_encode([
-                    '',
+                    '父は留学するという私の計画<span class="border-b text-red-500">に反対</span>している。',
                 ]),
                 'audio_url' => '827.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -292,9 +291,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'We must <span class="border-b text-red-500">reduce</span> the cost of our product.',
                 'meaning' => json_encode([
-                    '',
+                    '私たちは製品のコスト<span class="border-b text-red-500">を減らさ</span>なければならない。',
                 ]),
                 'audio_url' => '828.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -302,9 +301,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'The <span class="border-b text-red-500">stadium</span> was crowded with soccer fans.',
                 'meaning' => json_encode([
-                    '',
+                    '<span class="border-b text-red-500">競技場</span>はサッカーファンで混雑していた。',
                 ]),
                 'audio_url' => '829.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -312,9 +311,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'He <span class="border-b text-red-500">discovered</span> a new planet a hundred years ago.',
                 'meaning' => json_encode([
-                    '',
+                    '彼は100年前に新しい惑星を<span class="border-b text-red-500">発見した。</span>',
                 ]),
                 'audio_url' => '830.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
