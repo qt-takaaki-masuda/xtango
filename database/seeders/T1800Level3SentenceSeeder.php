@@ -231,7 +231,7 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => 'She injured her right <span class="border-b text-red-500">foot</span> in th tennis match.',
+                'word' => 'She injured her right <span class="border-b text-red-500">foot</span> in the tennis match.',
                 'meaning' => json_encode([
                     '彼女はテニスの試合で右<span class="border-b text-red-500">足</span>を痛めた。',
                 ]),
@@ -321,9 +321,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'Last night, I <span class="border-b text-red-500">missed</span> the last bus and took a taxi.',
                 'meaning' => json_encode([
-                    '',
+                    '昨夜、私は最終バス<span class="border-b text-red-500">に乗り遅れて、</span>タクシーに乗った。',
                 ]),
                 'audio_url' => '831.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -331,9 +331,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'Do you have this shirt in a smaller <span class="border-b text-red-500">size</span>?',
                 'meaning' => json_encode([
-                    '',
+                    'このシャツのもっと小さい<span class="border-b text-red-500">サイズ</span>はありますか？',
                 ]),
                 'audio_url' => '832.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -341,9 +341,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'The medicine had a bad <span class="border-b text-red-500">effect</span> on me.',
                 'meaning' => json_encode([
-                    '',
+                    'その薬は私に悪い<span class="border-b text-red-500">効果</span>をもたらした。',
                 ]),
                 'audio_url' => '833.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -351,9 +351,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'The <span class="border-b text-red-500">cows</span> are eating grass on the farm.',
                 'meaning' => json_encode([
-                    '',
+                    '農場で<span class="border-b text-red-500">牛</span>が草を食べている。',
                 ]),
                 'audio_url' => '834.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -361,9 +361,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'School starts in <span class="border-b text-red-500">April</span> in Japan.',
                 'meaning' => json_encode([
-                    '',
+                    '日本では学校は<span class="border-b text-red-500">4月</span>に始まる。',
                 ]),
                 'audio_url' => '835.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -371,9 +371,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'Let\'s <span class="border-b text-red-500">set</span> the date for the next practice game.',
                 'meaning' => json_encode([
-                    '',
+                    '次回の練習試合の日付<span class="border-b text-red-500">を決め</span>ましょう。',
                 ]),
                 'audio_url' => '836.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -381,9 +381,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'My favorite band is playing on the <span class="border-b text-red-500">stage</span>.',
                 'meaning' => json_encode([
-                    '',
+                    '私の大好きなバンドが<span class="border-b text-red-500">舞台</span>で演奏している。',
                 ]),
                 'audio_url' => '837.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -391,9 +391,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'The <span class="border-b text-red-500">service</span> at the hotel was excellent.',
                 'meaning' => json_encode([
-                    '',
+                    'そのホテルの<span class="border-b text-red-500">サービス</span>はすばらしかった。',
                 ]),
                 'audio_url' => '838.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -401,9 +401,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'The moon is a <span class="border-b text-red-500">satellite</span> of the earth.',
                 'meaning' => json_encode([
-                    '',
+                    '月は地球の<span class="border-b text-red-500">衛生</span>だ。',
                 ]),
                 'audio_url' => '839.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -411,9 +411,9 @@ class T1800Level3SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 132,
-                'word' => '',
+                'word' => 'He <span class="border-b text-red-500">hurt</span> his arm while he was playing basketball.',
                 'meaning' => json_encode([
-                    '',
+                    '彼はバスケットボールをしているときに腕<span class="border-b text-red-500">を痛めた。</span>',
                 ]),
                 'audio_url' => '840.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
