@@ -47,7 +47,7 @@ class WordController extends Controller
     public function index(Request $request, $mode, $sectionlId, $answerdWordId = null, $answerTime = null, $isCorrect = null)
     {
         // 回答ログに保存
-        $this->saveAnswerLog($answerdWordId, $answerTime, $isCorrect);
+        $this->saveAnswerLog($answerdWordId,$mode, $answerTime, $isCorrect);
 
         // セッションから取得
         $words = $request->session()->get('words');
@@ -82,7 +82,7 @@ class WordController extends Controller
         $word->audio_url = sprintf('/audio/tango_%d/level_%d/%s', $word->tango_id, $word->level_id, $word->audio_url);
 
         // 対象の単語が過去に間違ったことがあるか？
-        list($correctCount, $incorrectCount) = $this->getCorrectCount($word->id);
+        list($correctCount, $incorrectCount) = $this->getCorrectCount($word->id, $mode);
 
         return Inertia::render('Word/Index', ['word' => $word, 'mode' => $mode, 'correctCount' => $correctCount, 'incorrectCount' => $incorrectCount]);
     }
@@ -95,14 +95,15 @@ class WordController extends Controller
      * @param boolean $isCorrect
      * @return void
      */
-    private function saveAnswerLog($wordId, $answerTime, $isCorrect)
+    private function saveAnswerLog($wordId, $mode, $answerTime, $isCorrect)
     {
         if (empty($wordId) || empty($answerTime)) {
             return;
         }
 
-        DB::table('answer_time_logs')->insertOrIgnore([
+        DB::table('answer_logs')->insertOrIgnore([
             'word_id' => $wordId,
+            'mode' => $mode,
             'user_id' => Auth::id(),
             'answer_time' => $answerTime,
             'is_correct' => $isCorrect,
@@ -117,18 +118,20 @@ class WordController extends Controller
      * @param [type] $wordId
      * @return boolean
      */
-    private function getCorrectCount($wordId)
+    private function getCorrectCount($wordId, $mode)
     {
-        $correctCount = DB::table('answer_time_logs')
-            ->where('answer_time_logs.user_id', Auth::id())
-            ->where('answer_time_logs.word_id', $wordId)
-            ->where('answer_time_logs.is_correct', 1)
+        $correctCount = DB::table('answer_logs')
+            ->where('answer_logs.user_id', Auth::id())
+            ->where('answer_logs.word_id', $wordId)
+            ->where('answer_logs.mode', $mode)
+            ->where('answer_logs.is_correct', 1)
             ->count();
 
-        $incorrectCount = DB::table('answer_time_logs')
-            ->where('answer_time_logs.user_id', Auth::id())
-            ->where('answer_time_logs.word_id', $wordId)
-            ->where('answer_time_logs.is_correct', 0)
+        $incorrectCount = DB::table('answer_logs')
+            ->where('answer_logs.user_id', Auth::id())
+            ->where('answer_logs.word_id', $wordId)
+            ->where('answer_logs.mode', $mode)
+            ->where('answer_logs.is_correct', 0)
             ->count();
 
         return [$correctCount, $incorrectCount];

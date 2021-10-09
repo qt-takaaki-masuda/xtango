@@ -13,7 +13,7 @@ class CreateAnswerTimeLogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('answer_time_logs', function (Blueprint $table) {
+        Schema::create('answer_logs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('word_id')->index();
             $table->foreignId('user_id')->index();
@@ -30,6 +30,6 @@ class CreateAnswerTimeLogsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('answer_time_logs');
+        Schema::dropIfExists('answer_logs');
     }
 }

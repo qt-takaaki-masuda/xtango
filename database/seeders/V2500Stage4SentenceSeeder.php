@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class V2500Section4WordSeeder extends Seeder
+class V2500Stage4SentenceSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class V2500Section4WordSeeder extends Seeder
      */
     public function run()
     {
-        // 2500（連語編） Section4
+        // 2500（連語編） Stage4
         DB::table('words')->insert([
             // R261 - R280
             [

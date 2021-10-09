@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ChangeAnswerLogsTable extends Migration
+class ChangeTangos2Table extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class ChangeAnswerLogsTable extends Migration
     public function up()
     {
         Schema::table('answer_logs', function (Blueprint $table) {
-            $table->smallInteger('is_correct')->after('answer_time');
+            $table->smallInteger('mode')->default(1)->after('word_id');
         });
     }
 
@@ -26,7 +26,7 @@ class ChangeAnswerLogsTable extends Migration
     public function down()
     {
         Schema::table('answer_logs', function (Blueprint $table) {
-            $table->dropColumn('is_correct');
+            $table->dropColumn('mode');
         });
     }
 }
