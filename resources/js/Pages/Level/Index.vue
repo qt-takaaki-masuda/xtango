@@ -3,13 +3,13 @@
     <template #header>
       <ul class="flex text-gray-500 text-sm lg:text-base">
         <li class="inline-flex items-center">
-          <inertia-link :href="route('dashboard')" replace>Dashboard</inertia-link>
+          <inertia-link :href="route('dashboard')">Dashboard</inertia-link>
           <svg class="h-5 w-auto text-gray-400" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
           </svg>
         </li>
         <li class="inline-flex items-center">
-          <inertia-link :href="route('level.index', tango.id)" replace>{{ tango.title }}</inertia-link>
+          <inertia-link :href="route('level.index', tango.id)">{{ tango.title }}</inertia-link>
         </li>
       </ul>
     </template>
@@ -23,7 +23,7 @@
                 <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
                 <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                   <h3 class="text-center">
-                    <inertia-link :href="route('section.index', level.id)" class="text-white text-2xl font-bold text-center" replace>
+                    <inertia-link :href="route('section.index', level.id)" class="text-white text-2xl font-bold text-center">
                       <span class="absolute inset-0"></span>
                         {{ level.title }}
                     </inertia-link>

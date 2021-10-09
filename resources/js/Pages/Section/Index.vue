@@ -3,19 +3,19 @@
     <template #header>
       <ul class="flex text-gray-500 text-sm lg:text-base">
         <li class="inline-flex items-center">
-          <inertia-link :href="route('dashboard')" replace>Dashboard</inertia-link>
+          <inertia-link :href="route('dashboard')">Dashboard</inertia-link>
           <svg class="h-5 w-auto text-gray-400" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
           </svg>
         </li>
         <li class="inline-flex items-center">
-          <inertia-link :href="route('level.index', tango.id)" replace>{{ tango.title }}</inertia-link>
+          <inertia-link :href="route('level.index', tango.id)">{{ tango.title }}</inertia-link>
           <svg class="h-5 w-auto text-gray-400" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
           </svg>
         </li>
         <li class="inline-flex items-center">
-          <inertia-link :href="route('level.index', tango.id)" replace>{{ level.title }}</inertia-link>
+          <inertia-link :href="route('level.index', tango.id)">{{ level.title }}</inertia-link>
         </li>
       </ul>
     </template>
@@ -32,7 +32,7 @@
                 </h2>
                 <div class="lg:mt-0 lg:flex-shrink-0">
                     <div v-for="mode in modes" v-bind:key="mode.id" class="mt-12 mx-1 inline-flex rounded-md shadow">
-                        <inertia-link :href="route('word.index', [mode.mode, section.id, 0, 0, 0])" method="get" as="button" type="button" class="py-4 px-6  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg" replace>
+                        <inertia-link :href="route('word.index', [mode.mode, section.id, 0, 0, 0])" method="get" as="button" type="button" class="py-4 px-6  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
                             {{ mode.title }}
                         </inertia-link>
                     </div>
