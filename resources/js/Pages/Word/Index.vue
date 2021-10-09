@@ -118,10 +118,6 @@ export default defineComponent({
   },
 
   mounted() {
-    // 単語→意味の場合、単語表示のタイミングで再生
-    if (this.mode == 1) {
-      this.playMp3(this.word.audio_url);
-    }
     // 開始時間の取得
     this.start = performance.now();
   },
