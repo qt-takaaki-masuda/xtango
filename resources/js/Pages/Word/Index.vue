@@ -32,11 +32,12 @@
           <div class="bg-white dark:bg-gray-800 shadow-xl sm:rounded-lg my-2">
               <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-6 px-4 sm:px-6 lg:py-6 lg:px-8 z-20">
                   <div class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
+                      <span v-show="mode == 2" id="word-mask" class="block mb-3 text-2xl">
+                        <input v-model="answerText" class="shadow appearance-none border rounded w-auto py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="answerText" type="text" placeholder="ここに回答してください" autocomplete="off">
+                        <span v-show="isAnsered == true" v-bind:class="['text-sm','ml-4', { 'text-green-500': isMatch, 'text-red-400': !isMatch }]">{{ matchResult }}</span>
+                      </span>
                       <span v-show="mode == 1" id="word" class="block mb-3 text-2xl">
                         <span v-html="word.word"></span><button v-if="word.audio_url.length" @click="playMp3(word.audio_url)"><VolumeUpIcon class="h-7 w-7 ml-6 inline"/></button>
-                      </span>
-                      <span v-show="mode == 2" id="word-mask" class="block mb-3 text-2xl">
-                        ？？？？？？？
                       </span>
                       <span v-show="mode == 2" id="meaning" class="block text-2xl text-indigo-500 mb-3">
                         <span v-html="formatMeaning(word.meaning)"></span>
@@ -87,16 +88,16 @@ import { VolumeUpIcon, TagIcon, CheckCircleIcon, XCircleIcon } from '@heroicons/
 export default defineComponent({
   props: {
     word: {
-      type: Array,
+      type: Object,
     },
     mode: {
       type: String,
     },
     correctCount: {
-      type: String,
+      type: Number,
     },
     incorrectCount: {
-      type: String,
+      type: Number,
     }
   },
   
@@ -106,6 +107,9 @@ export default defineComponent({
       start: 0,
       end: 0,
       isAnsered: false,
+      answerText: '',
+      isMatch: true,
+      matchResult: null,
     }
   },
 
@@ -120,6 +124,10 @@ export default defineComponent({
   mounted() {
     // 開始時間の取得
     this.start = performance.now();
+    // // 単語→日本語の場合、単語表示のタイミングで音声
+    // if (this.mode == 1) {
+    //   setTimeout(this.playMp3(this.word.audio_url), 3000);
+    // }
   },
 
   methods: {
@@ -142,7 +150,16 @@ export default defineComponent({
         var target = document.getElementById('word');
         target.style.display = 'block';
         var targetMask = document.getElementById('word-mask');
-        targetMask.style.display = 'none';
+        // 入力内容と答えが一致しているか？
+        if (this.answerText == this.word.word) {
+          this.isMatch = true;
+          this.matchResult = '○ 一致！';
+        } else {
+          this.isMatch = false;
+          this.matchResult = '☓ 不一致';
+        }
+        // 音声
+        this.playMp3(this.word.audio_url);
       }
       // ボタンを非活性
       this.isAnsered = true;

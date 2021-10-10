@@ -94,7 +94,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'word' => 'jacket',
                 'meaning' => json_encode([
                     '<span class="kakomu">名</span>上着、ジャケット',
-                    '<span class="indent"></span><<本などの>>カバー',
+                    '<span class="indent"></span>[本などの]カバー',
                 ]),
                 'audio_url' => 'jacket.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -150,7 +150,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 211,
                 'word' => 'either',
                 'meaning' => json_encode([
-                    '<span class="kakomu">副</span><<否定文のあとで>>〜もまた(･･･ない)',
+                    '<span class="kakomu">副</span>[否定文のあとで]〜もまた(･･･ない)',
                 ]),
                 'audio_url' => 'either.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -182,7 +182,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 211,
                 'word' => 'police',
                 'meaning' => json_encode([
-                    '<span class="kakomu">名</span>警察<<the police で複数扱い>>',
+                    '<span class="kakomu">名</span>警察[the police で複数扱い]',
                 ]),
                 'audio_url' => 'police.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -282,7 +282,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'word' => 'such',
                 'meaning' => json_encode([
                     '<span class="kakomu">形</span>そのような',
-                    '<span class="indent"></span><<形＋名の前で>>とても、そんなに',
+                    '<span class="indent"></span>[形＋名の前で]とても、そんなに',
                 ]),
                 'audio_url' => 'such.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -293,7 +293,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'word' => 'even',
                 'meaning' => json_encode([
                     '<span class="kakomu">副</span>〜でさえ',
-                    '<span class="indent"></span><<比較級の前で>>さらに',
+                    '<span class="indent"></span>[比較級の前で]さらに',
                 ]),
                 'audio_url' => 'even.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -449,8 +449,8 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 213,
                 'word' => 'less',
                 'meaning' => json_encode([
-                    '<span class="kakomu">形</span><<little の比較級>>より少ない',
-                    '<span class="kakomu">副</span><<little の比較級>>より少なく',
+                    '<span class="kakomu">形</span>[little の比較級]より少ない',
+                    '<span class="kakomu">副</span>[little の比較級]より少なく',
                 ]),
                 'audio_url' => 'less.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -460,8 +460,8 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 213,
                 'word' => 'least',
                 'meaning' => json_encode([
-                    '<span class="kakomu">形</span><<little の最上級>>最も少ない',
-                    '<span class="kakomu">副</span><<little の最上級>>最も少なく',
+                    '<span class="kakomu">形</span>[little の最上級]最も少ない',
+                    '<span class="kakomu">副</span>[little の最上級]最も少なく',
                 ]),
                 'audio_url' => 'least.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -501,9 +501,9 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 213,
                 'word' => 'anywhere',
                 'meaning' => json_encode([
-                    '<span class="kakomu">副</span><<疑問符で>>どこかに[へ]',
-                    '<span class="indent"></span><<否定文で>>どこにも(〜ない)',
-                    '<span class="indent"></span><<肯定文で>>どこへでも',
+                    '<span class="kakomu">副</span>[疑問符で]どこかに[へ]',
+                    '<span class="indent"></span>[否定文で]どこにも(〜ない)',
+                    '<span class="indent"></span>[肯定文で]どこへでも',
                 ]),
                 'audio_url' => 'anywhere.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -523,7 +523,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 213,
                 'word' => 'someday',
                 'meaning' => json_encode([
-                    '<span class="kakomu">副</span><<未来の>>いつか、そのうち',
+                    '<span class="kakomu">副</span>[未来の]いつか、そのうち',
                 ]),
                 'audio_url' => 'someday.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -754,7 +754,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 214,
                 'word' => 'born',
                 'meaning' => json_encode([
-                    '<span class="kakomu">動</span><<be born で>>生まれる',
+                    '<span class="kakomu">動</span>[be born で]生まれる',
                     '<span class="maruku-kakomu">活</span>bear-bore-born 〜を産む',
                 ]),
                 'audio_url' => 'born.mp3',
@@ -797,7 +797,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 214,
                 'word' => 'wood',
                 'meaning' => json_encode([
-                    '<span class="kakomu">名</span>木材、<<複数形で>>森',
+                    '<span class="kakomu">名</span>木材、[複数形で]森',
                 ]),
                 'audio_url' => 'wood.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -817,7 +817,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 214,
                 'word' => 'web',
                 'meaning' => json_encode([
-                    '<span class="kakomu">名</span><<the Web で>><<インターネットの>>ウェブ',
+                    '<span class="kakomu">名</span>[the Web で][インターネットの]ウェブ',
                     '<span class="indent"></span>クモの巣',
                 ]),
                 'audio_url' => 'web.mp3',
@@ -829,7 +829,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'word' => 'site',
                 'meaning' => json_encode([
                     '<span class="kakomu">名</span>用地、場所',
-                    '<span class="indent"></span>　<<インターネットの>>サイト(= website ウェブサイト)',
+                    '<span class="indent"></span>　[インターネットの]サイト(= website ウェブサイト)',
                 ]),
                 'audio_url' => 'site.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -840,7 +840,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'word' => 'step',
                 'meaning' => json_encode([
                     '<span class="kakomu">名</span>歩み、一歩',
-                    '<span class="indent"></span><<階段の>>段、<<複数形で>>(ふつう屋外の)階段',
+                    '<span class="indent"></span>[階段の]段、[複数形で](ふつう屋外の)階段',
                     '<span class="kakomu">動</span>一歩進む、踏み出す',
                 ]),
                 'audio_url' => 'step.mp3',
@@ -851,10 +851,10 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 214,
                 'word' => 'have',
                 'meaning' => json_encode([
-                    '<span class="kakomu">助</span><<have[has]＋過去分詞で現在完了を表す>>',
-                    '<span class="indent"></span><<継続>>(ずっと)〜している',
-                    '<span class="indent"></span><<完了>>〜したところだ、〜してしまった',
-                    '<span class="indent"></span><<経験>>(今までに)〜したことがある',
+                    '<span class="kakomu">助</span>[have[has]＋過去分詞で現在完了を表す]',
+                    '<span class="indent"></span>[継続](ずっと)〜している',
+                    '<span class="indent"></span>[完了]〜したところだ、〜してしまった',
+                    '<span class="indent"></span>[経験](今までに)〜したことがある',
                 ]),
                 'audio_url' => 'have.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -910,7 +910,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 215,
                 'word' => 'already',
                 'meaning' => json_encode([
-                    '<span class="kakomu">副</span><<肯定文で>>すでに、もう',
+                    '<span class="kakomu">副</span>[肯定文で]すでに、もう',
                 ]),
                 'audio_url' => 'already.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -920,8 +920,8 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 215,
                 'word' => 'yet',
                 'meaning' => json_encode([
-                    '<span class="kakomu">副</span><<否定文で>>まだ(〜ない)',
-                    '<span class="indent"></span><<疑問文で>>もう',
+                    '<span class="kakomu">副</span>[否定文で]まだ(〜ない)',
+                    '<span class="indent"></span>[疑問文で]もう',
                 ]),
                 'audio_url' => 'yet.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -941,7 +941,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'section_id' => 215,
                 'word' => 'able',
                 'meaning' => json_encode([
-                    '<span class="kakomu">形</span><<be able to 〜で>>〜することができる(⇔ unable)、有能な',
+                    '<span class="kakomu">形</span>[be able to 〜で]〜することができる(⇔ unable)、有能な',
                 ]),
                 'audio_url' => 'able.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -952,7 +952,7 @@ class V2500Stage3WordSeeder extends Seeder
                 'word' => 'human',
                 'meaning' => json_encode([
                     '<span class="kakomu">形</span>人間の、人間的な',
-                    '<span class="kakomu">名</span><<ふつう humanで>>人、人間、<<human being で>>人間',
+                    '<span class="kakomu">名</span>[ふつう humanで]人、人間、[human being で]人間',
                 ]),
                 'audio_url' => 'human.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
