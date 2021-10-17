@@ -158,9 +158,9 @@ export default defineComponent({
           this.isMatch = false;
           this.matchResult = '☓ 不一致';
         }
-        // 音声
-        this.playMp3(this.word.audio_url);
       }
+      // 音声
+      this.playMp3(this.word.audio_url);
       // ボタンを非活性
       this.isAnsered = true;
     },

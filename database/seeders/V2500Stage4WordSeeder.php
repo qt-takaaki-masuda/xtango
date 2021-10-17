@@ -2034,7 +2034,7 @@ class V2500Stage4WordSeeder extends Seeder
                 'word' => 'certainly',
                 'meaning' => json_encode([
                     '<span class="kakomu">副</span>確かに(= surely)',
-                    '<span class="kakomu"></span>[返事として]いいですよ、もちろん',
+                    '<span class="indent"></span>[返事として]いいですよ、もちろん',
                 ]),
                 'audio_url' => 'certainly.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -2087,7 +2087,7 @@ class V2500Stage4WordSeeder extends Seeder
                 'word' => 'fix',
                 'meaning' => json_encode([
                     '<span class="kakomu">動</span>〜を修理する(= repaire、mend)',
-                    '<span class="kakomu"></span>〜を固定する',
+                    '<span class="indent"></span>〜を固定する',
                 ]),
                 'audio_url' => 'fix.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -2119,7 +2119,6 @@ class V2500Stage4WordSeeder extends Seeder
                 'word' => 'prize',
                 'meaning' => json_encode([
                     '<span class="kakomu">名</span>賞、商品',
-                    '<span class="kakomu"></span>',
                 ]),
                 'audio_url' => 'prize.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
