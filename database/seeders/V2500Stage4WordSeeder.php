@@ -1293,423 +1293,838 @@ class V2500Stage4WordSeeder extends Seeder
             //     'updated_at' => date('Y-m-d H:i:s'),
             // ],
 
-            // 1321 - 1340
-            [
-                'section_id' => 237,
-                'word' => 'research',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>調査、研究',
-                    '<span class="kakomu">動</span>(〜を)調査する、研究する',
-                ]),
-                'audio_url' => 'research.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'researcher',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>調査員、研究者',
-                ]),
-                'audio_url' => 'researcher.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'president',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>大統領、社長',
-                    '<span class="indent"></span>学長',
-                ]),
-                'audio_url' => 'president.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'center',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>中心、センター',
-                ]),
-                'audio_url' => 'center.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'central',
-                'meaning' => json_encode([
-                    '<span class="kakomu">形</span>中心の、中央の',
-                ]),
-                'audio_url' => 'central.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'courage',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>勇気',
-                ]),
-                'audio_url' => 'courage.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'encourage',
-                'meaning' => json_encode([
-                    '<span class="kakomu">動</span>〜を励ます、勇気づける',
-                ]),
-                'audio_url' => 'encourage.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'toward',
-                'meaning' => json_encode([
-                    '<span class="kakomu">前</span>〜の方へ、〜に向かって',
-                ]),
-                'audio_url' => 'toward.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'count',
-                'meaning' => json_encode([
-                    '<span class="kakomu">動</span>(〜を)数える、数に入れる',
-                ]),
-                'audio_url' => 'count.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'land',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>土地、陸地(⇔ sea)、国',
-                    '<span class="kakomu">動</span>着陸する',
-                ]),
-                'audio_url' => 'land.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'flight',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>飛行、空の旅、(飛行機の)便',
-                ]),
-                'audio_url' => 'flight.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'pilot',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>パイロット',
-                ]),
-                'audio_url' => 'pilot.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'passenger',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>乗客、旅客',
-                ]),
-                'audio_url' => 'passenger.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'tour',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>旅行、周遊旅行',
-                ]),
-                'audio_url' => 'tour.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'cent',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>[通貨単位]セント',
-                    '<span class="indent"></span>100 cents = 1 dollar',
-                ]),
-                'audio_url' => 'cent.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'century',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>世紀、100年',
-                ]),
-                'audio_url' => 'century.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'similar',
-                'meaning' => json_encode([
-                    '<span class="kakomu">形</span>似ている、同様の',
-                ]),
-                'audio_url' => 'similar.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'marry',
-                'meaning' => json_encode([
-                    '<span class="kakomu">動</span>(〜と)結婚する',
-                ]),
-                'audio_url' => 'marry.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'wedding',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>結婚式',
-                ]),
-                'audio_url' => 'wedding.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 237,
-                'word' => 'whole',
-                'meaning' => json_encode([
-                    '<span class="kakomu">形</span>[whole + 名詞で]全体の、全〜(= all)',
-                    '<span class="kakomu">名</span>全体',
-                ]),
-                'audio_url' => 'whole.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
+            // // 1321 - 1340
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'research',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>調査、研究',
+            //         '<span class="kakomu">動</span>(〜を)調査する、研究する',
+            //     ]),
+            //     'audio_url' => 'research.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'researcher',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>調査員、研究者',
+            //     ]),
+            //     'audio_url' => 'researcher.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'president',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>大統領、社長',
+            //         '<span class="indent"></span>学長',
+            //     ]),
+            //     'audio_url' => 'president.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'center',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>中心、センター',
+            //     ]),
+            //     'audio_url' => 'center.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'central',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">形</span>中心の、中央の',
+            //     ]),
+            //     'audio_url' => 'central.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'courage',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>勇気',
+            //     ]),
+            //     'audio_url' => 'courage.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'encourage',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">動</span>〜を励ます、勇気づける',
+            //     ]),
+            //     'audio_url' => 'encourage.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'toward',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">前</span>〜の方へ、〜に向かって',
+            //     ]),
+            //     'audio_url' => 'toward.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'count',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">動</span>(〜を)数える、数に入れる',
+            //     ]),
+            //     'audio_url' => 'count.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'land',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>土地、陸地(⇔ sea)、国',
+            //         '<span class="kakomu">動</span>着陸する',
+            //     ]),
+            //     'audio_url' => 'land.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'flight',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>飛行、空の旅、(飛行機の)便',
+            //     ]),
+            //     'audio_url' => 'flight.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'pilot',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>パイロット',
+            //     ]),
+            //     'audio_url' => 'pilot.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'passenger',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>乗客、旅客',
+            //     ]),
+            //     'audio_url' => 'passenger.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'tour',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>旅行、周遊旅行',
+            //     ]),
+            //     'audio_url' => 'tour.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'cent',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>[通貨単位]セント',
+            //         '<span class="indent"></span>100 cents = 1 dollar',
+            //     ]),
+            //     'audio_url' => 'cent.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'century',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>世紀、100年',
+            //     ]),
+            //     'audio_url' => 'century.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'similar',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">形</span>似ている、同様の',
+            //     ]),
+            //     'audio_url' => 'similar.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'marry',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">動</span>(〜と)結婚する',
+            //     ]),
+            //     'audio_url' => 'marry.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'wedding',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>結婚式',
+            //     ]),
+            //     'audio_url' => 'wedding.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 237,
+            //     'word' => 'whole',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">形</span>[whole + 名詞で]全体の、全〜(= all)',
+            //         '<span class="kakomu">名</span>全体',
+            //     ]),
+            //     'audio_url' => 'whole.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
 
-            // 1341 - 1360
-            [
-                'section_id' => 238,
-                'word' => 'total',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>合計、総額',
-                    '<span class="kakomu">形</span>全体の、総計の、まったくの',
-                ]),
-                'audio_url' => 'total.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'steal',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>(こっそり)〜を盗む',
-                ]),
-                'audio_url' => 'steal.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'attack',
-                'meaning' => json_encode([
-                    '<span class="kakomu">動</span>〜を攻撃する、襲う',
-                    '<span class="kakomu">名</span>攻撃、[病気の]発作',
-                ]),
-                'audio_url' => 'attack.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'destroy',
-                'meaning' => json_encode([
-                    '<span class="kakomu">動</span>〜を破壊する、壊す',
-                ]),
-                'audio_url' => 'destroy.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'waste',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>むだ、浪費、ごみ',
-                    '<span class="kakomu">動</span>〜をむだに使う',
-                ]),
-                'audio_url' => 'waste.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'suffer',
-                'meaning' => json_encode([
-                    '<span class="kakomu">動</span>(苦痛など)を受ける',
-                    '<span class="indent"></span>苦しむ',
-                ]),
-                'audio_url' => 'suffer.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'injure',
-                'meaning' => json_encode([
-                    '<span class="kakomu">動</span>〜にけがをさせる、〜を傷つける',
-                ]),
-                'audio_url' => 'injure.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'injury',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>けが、負傷',
-                    '<span class="indent"></span>損害',
-                ]),
-                'audio_url' => 'injury.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'environment',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>環境',
-                ]),
-                'audio_url' => 'environment.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'dentist',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>歯科医師',
-                ]),
-                'audio_url' => 'dentist.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'drugstore',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>ドラッグストア',
-                ]),
-                'audio_url' => 'drugstore.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'stomach',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>おなか、胃',
-                ]),
-                'audio_url' => 'stomach.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'stomachache',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>腹痛',
-                ]),
-                'audio_url' => 'stomachache.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'pain',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>痛み、苦痛',
-                ]),
-                'audio_url' => 'pain.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'select',
-                'meaning' => json_encode([
-                    '<span class="kakomu">動</span>(〜を)選ぶ、選択する',
-                ]),
-                'audio_url' => 'select.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'gas',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>ガス、気体',
-                ]),
-                'audio_url' => 'gas.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'oil',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>石油、油',
-                ]),
-                'audio_url' => 'oil.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'engine',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>エンジン',
-                ]),
-                'audio_url' => 'engine.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'engineering',
-                'meaning' => json_encode([
-                    '<span class="kakomu">名</span>工学',
-                ]),
-                'audio_url' => 'engineering.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 238,
-                'word' => 'electric',
-                'meaning' => json_encode([
-                    '<span class="kakomu">形</span>電気の',
-                ]),
-                'audio_url' => 'electric.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
+            // // 1341 - 1360
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'total',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>合計、総額',
+            //         '<span class="kakomu">形</span>全体の、総計の、まったくの',
+            //     ]),
+            //     'audio_url' => 'total.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'steal',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>(こっそり)〜を盗む',
+            //     ]),
+            //     'audio_url' => 'steal.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'attack',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">動</span>〜を攻撃する、襲う',
+            //         '<span class="kakomu">名</span>攻撃、[病気の]発作',
+            //     ]),
+            //     'audio_url' => 'attack.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'destroy',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">動</span>〜を破壊する、壊す',
+            //     ]),
+            //     'audio_url' => 'destroy.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'waste',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>むだ、浪費、ごみ',
+            //         '<span class="kakomu">動</span>〜をむだに使う',
+            //     ]),
+            //     'audio_url' => 'waste.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'suffer',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">動</span>(苦痛など)を受ける',
+            //         '<span class="indent"></span>苦しむ',
+            //     ]),
+            //     'audio_url' => 'suffer.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'injure',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">動</span>〜にけがをさせる、〜を傷つける',
+            //     ]),
+            //     'audio_url' => 'injure.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'injury',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>けが、負傷',
+            //         '<span class="indent"></span>損害',
+            //     ]),
+            //     'audio_url' => 'injury.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'environment',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>環境',
+            //     ]),
+            //     'audio_url' => 'environment.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'dentist',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>歯科医師',
+            //     ]),
+            //     'audio_url' => 'dentist.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'drugstore',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>ドラッグストア',
+            //     ]),
+            //     'audio_url' => 'drugstore.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'stomach',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>おなか、胃',
+            //     ]),
+            //     'audio_url' => 'stomach.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'stomachache',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>腹痛',
+            //     ]),
+            //     'audio_url' => 'stomachache.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'pain',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>痛み、苦痛',
+            //     ]),
+            //     'audio_url' => 'pain.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'select',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">動</span>(〜を)選ぶ、選択する',
+            //     ]),
+            //     'audio_url' => 'select.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'gas',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>ガス、気体',
+            //     ]),
+            //     'audio_url' => 'gas.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'oil',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>石油、油',
+            //     ]),
+            //     'audio_url' => 'oil.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'engine',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>エンジン',
+            //     ]),
+            //     'audio_url' => 'engine.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'engineering',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">名</span>工学',
+            //     ]),
+            //     'audio_url' => 'engineering.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 238,
+            //     'word' => 'electric',
+            //     'meaning' => json_encode([
+            //         '<span class="kakomu">形</span>電気の',
+            //     ]),
+            //     'audio_url' => 'electric.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
 
             // 1361 - 1380
+            [
+                'section_id' => 239,
+                'word' => 'electricity',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>電気',
+                ]),
+                'audio_url' => 'electricity.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'sweater',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>セーター',
+                ]),
+                'audio_url' => 'sweater.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'belt',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>ベルト',
+                ]),
+                'audio_url' => 'belt.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'button',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>ボタン',
+                ]),
+                'audio_url' => 'button.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'overseas',
+                'meaning' => json_encode([
+                    '<span class="kakomu">副</span>海外へ、外国に(= abroad)',
+                    '<span class="kakomu">形</span>海外の(= foreign)',
+                ]),
+                'audio_url' => 'overseas.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'ghost',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>幽霊',
+                ]),
+                'audio_url' => 'ghost.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'quite',
+                'meaning' => json_encode([
+                    '<span class="kakomu">副</span>まったく',
+                    '<span class="kakomu"></span>かなり、なかなか',
+                ]),
+                'audio_url' => 'quite.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'respect',
+                'meaning' => json_encode([
+                    '<span class="kakomu">動</span>〜を尊敬する(= look up to)、尊重する',
+                    '<span class="kakomu">名</span>尊敬、尊重',
+                ]),
+                'audio_url' => 'respect.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'discover',
+                'meaning' => json_encode([
+                    '<span class="kakomu">動</span>〜を発見する',
+                ]),
+                'audio_url' => 'discover.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'discovery',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>発見、発見されたもの',
+                ]),
+                'audio_url' => 'discovery.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'global',
+                'meaning' => json_encode([
+                    '<span class="kakomu">形</span>全世界の、地球(規模)の',
+                ]),
+                'audio_url' => 'global.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'social',
+                'meaning' => json_encode([
+                    '<span class="kakomu">形</span>社会の',
+                ]),
+                'audio_url' => 'social.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'society',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>社会',
+                    '<span class="indent"></span>協会、団体',
+                ]),
+                'audio_url' => 'society.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'freedom',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>自由',
+                ]),
+                'audio_url' => 'freedom.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'importance',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>重要性、大切さ',
+                ]),
+                'audio_url' => 'importance.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'hunger',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>飢え、空腹',
+                ]),
+                'audio_url' => 'hunger.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'training',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>訓練、練習',
+                ]),
+                'audio_url' => 'training.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'law',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>法律',
+                    '<span class="indent"></span>法則',
+                ]),
+                'audio_url' => 'law.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'lawyer',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>弁護士、法律家',
+                ]),
+                'audio_url' => 'lawyer.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 239,
+                'word' => 'wild',
+                'meaning' => json_encode([
+                    '<span class="kakomu">形</span>野生の、[人などが]乱暴な',
+                    '<span class="kakomu">名</span>[the をつけて]野生(の状態)',
+                ]),
+                'audio_url' => 'wild.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
 
             // 1381 - 1400
+            [
+                'section_id' => 240,
+                'word' => 'bark',
+                'meaning' => json_encode([
+                    '<span class="kakomu">動</span>[犬などが]ほえる',
+                    '<span class="kakomu">名</span>ほえる声',
+                ]),
+                'audio_url' => 'bark.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'bite',
+                'meaning' => json_encode([
+                    '<span class="kakomu">動</span>(〜を)かむ',
+                    '<span class="kakomu">名</span>かむこと、ひと口',
+                ]),
+                'audio_url' => 'bite.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'carrot',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>ニンジン',
+                ]),
+                'audio_url' => 'carrot.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'onion',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>タマネギ',
+                ]),
+                'audio_url' => 'onion.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'toast',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>トースト',
+                ]),
+                'audio_url' => 'toast.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'dessert',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>デザート',
+                ]),
+                'audio_url' => 'dessert.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'desert',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>砂漠',
+                    '<span class="kakomu">形</span>砂漠の',
+                ]),
+                'audio_url' => 'desert.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'dolphin',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>イルカ',
+                ]),
+                'audio_url' => 'dolphin.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'whale',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>クジラ',
+                ]),
+                'audio_url' => 'whale.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'countryside',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>[the をつけて]いなか、地方',
+                ]),
+                'audio_url' => 'countryside.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'empty',
+                'meaning' => json_encode([
+                    '<span class="kakomu">形</span>からの(⇔ full いっぱいの)',
+                ]),
+                'audio_url' => 'empty.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'certainly',
+                'meaning' => json_encode([
+                    '<span class="kakomu">副</span>確かに(= surely)',
+                    '<span class="kakomu"></span>[返事として]いいですよ、もちろん',
+                ]),
+                'audio_url' => 'certainly.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'perhaps',
+                'meaning' => json_encode([
+                    '<span class="kakomu">副</span>もしかしたら、たぶん',
+                ]),
+                'audio_url' => 'perhaps.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'apply',
+                'meaning' => json_encode([
+                    '<span class="kakomu">動</span>申し込む、〜を適用する',
+                    '<span class="kakomu">名</span>申し込み、適用',
+                ]),
+                'audio_url' => 'apply.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'accept',
+                'meaning' => json_encode([
+                    '<span class="kakomu">動</span>〜を受け入れる、受け取る',
+                    '<span class="kakomu"></span>容認する',
+                ]),
+                'audio_url' => 'accept.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'bury',
+                'meaning' => json_encode([
+                    '<span class="kakomu">動</span>〜を埋める、埋葬する',
+                ]),
+                'audio_url' => 'bury.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'fix',
+                'meaning' => json_encode([
+                    '<span class="kakomu">動</span>〜を修理する(= repaire、mend)',
+                    '<span class="kakomu"></span>〜を固定する',
+                ]),
+                'audio_url' => 'fix.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'diary',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>日記',
+                ]),
+                'audio_url' => 'diary.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'note',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>メモ、短い手紙',
+                    '<span class="kakomu">動</span>〜を書き留める',
+                ]),
+                'audio_url' => 'note.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 240,
+                'word' => 'prize',
+                'meaning' => json_encode([
+                    '<span class="kakomu">名</span>賞、商品',
+                    '<span class="kakomu"></span>',
+                ]),
+                'audio_url' => 'prize.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
 
             // 1401 - 1420
 
