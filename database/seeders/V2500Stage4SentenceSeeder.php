@@ -291,7 +291,7 @@ class V2500Stage4SentenceSeeder extends Seeder
                 'word' => 'write to 〜<br>ex)I sometimes <span class="border-b text-red-500">write to</span> my grandmother.',
                 'meaning' => json_encode([
                     '〜に手紙を書く',
-                    '例私は時々祖母<span class="border-b text-red-500">に手紙を書きます。</span>',
+                    '例)私は時々祖母<span class="border-b text-red-500">に手紙を書きます。</span>',
                 ]),
                 'audio_url' => '285.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -299,10 +299,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'say to oneself<br>ex)I always <span class="border-b text-red-500">say to myself</span> that I can do it.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '心の中で思う、(心の中で)自分に言い聞かせる',
+                    '例)私はいつも、私はできると<span class="border-b text-red-500">自分に言い聞かせます</span>。',
                 ]),
                 'audio_url' => '286.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -310,10 +310,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'help onself (to 〜)<br>ex)Please <span class="border-b text-red-500">help yourself</span> to the cookies.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '(〜を)自分で取って食べる[飲む]',
+                    '例)クッキー<span class="border-b text-red-500">を自由にお取り</span>ください。',
                 ]),
                 'audio_url' => '287.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -321,10 +321,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'keep one\'s promise[word]<br>ex)John always <span class="border-b text-red-500">keep his promise</span>.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '約束を守る',
+                    '例)ジョンはいつも<span class="border-b text-red-500">約束を守ります</span>。',
                 ]),
                 'audio_url' => '288.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -332,10 +332,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'lose one\'s way<br>ex)They <span class="border-b text-red-500">lost their way</span> in the woods.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '道に迷う',
+                    '例)彼らは森の中で<span class="border-b text-red-500">道に迷いました</span>。',
                 ]),
                 'audio_url' => '289.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -343,10 +343,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'make up one\'s mind to 〜<br>ex)He <span class="border-b text-red-500">made up his mind to</span> study science at college.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '〜しようと決心する',
+                    '例)彼は大学で科学を勉強<span class="border-b text-red-500">しようと決心しました</span>。',
                 ]),
                 'audio_url' => '290.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -354,10 +354,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'change one\'s mind<br>ex)She <span class="border-b text-red-500">changed her mind</span> about him after that.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '考えを変える',
+                    '例)彼女はそれ以後、彼に対する<span class="border-b text-red-500">考え方を変えました</span>。',
                 ]),
                 'audio_url' => '291.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -365,10 +365,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'remind A of B<br>ex)This song <span class="border-b text-red-500">reminds</span> him <span class="border-b text-red-500">of</span> his hometown.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    'AにBを思い出させる',
+                    '例)この歌は彼<span class="border-b text-red-500">に</span>自分の故郷<span class="border-b text-red-500">を思い出させます</span>。',
                 ]),
                 'audio_url' => '292.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -376,10 +376,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'to tell the truth<br>ex)<span class="border-b text-red-500">To tell the truth</span>, I told a lie to her.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '実は、実を言うと',
+                    '例)<span class="border-b text-red-500">実を言うと</span>、私は彼女に嘘をつきました。',
                 ]),
                 'audio_url' => '293.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -387,10 +387,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'as you know<br>ex)<span class="border-b text-red-500">As you know</span>, I have a big sister and a little brother.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '知ってのとおり、ご存知のように',
+                    '例)<span class="border-b text-red-500">知ってのとおり</span>、私には姉と弟がいます。',
                 ]),
                 'audio_url' => '294.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -398,10 +398,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'by the way<br>ex)<span class="border-b text-red-500">By the way</span>, are you free this afternoon?',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    'ところで',
+                    '例)<span class="border-b text-red-500">ところで</span>、あなたは今日の午後ひまですか？',
                 ]),
                 'audio_url' => '295.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -409,10 +409,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'at the age of 〜<br>ex)He suddenly became sick <span class="border-b text-red-500">at the age of</span> 10.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '〜歳のとき、〜歳で',
+                    '例)彼は<span class="border-b text-red-500">10歳のときに</span>突然病気になりました。',
                 ]),
                 'audio_url' => '296.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -420,10 +420,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'at the end of 〜<br>ex)We went to Kamakura <span class="border-b text-red-500">at the end of</span> August.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '〜の終わりに',
+                    '例)私たちは8月<span class="border-b text-red-500">の終わりに</span>鎌倉に行きました。',
                 ]),
                 'audio_url' => '297.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -431,10 +431,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'far from 〜<br>ex)It is <span class="border-b text-red-500">far from</span> the case.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '〜にはほど遠い、とても〜ではない',
+                    '例)それは事実<span class="border-b text-red-500">とはほど遠い</span>。',
                 ]),
                 'audio_url' => '298.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -442,10 +442,11 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'look into 〜<br>ex1)The boy <span class="border-b text-red-500">looked into</span> the box.<br>ex2)The police are <span class="border-b text-red-500">looking into</span> the case.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '〜の中をのぞく、〜を(よく)調べる',
+                    '例1)その少年は箱<span class="border-b text-red-500">の中をのぞきました</span>。',
+                    '例2)警察はその事件<span class="border-b text-red-500">を調べている</span>ところです。',
                 ]),
                 'audio_url' => '299.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -453,10 +454,11 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 195,
-                'word' => '',
+                'word' => 'look up (〜)<br>ex1)She <span class="border-b text-red-500">looked up</span> at the sky.<br>ex2)She <span class="border-b text-red-500">looked up</span> the word in her dictionary.',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '見上げる、[辞書などで]〜を調べる',
+                    '例1)彼女は空を<span class="border-b text-red-500">見上げました</span>。',
+                    '例2)彼女はその単語<span class="border-b text-red-500">を</span>自分の辞書で<span class="border-b text-red-500">調べました</span>。',
                 ]),
                 'audio_url' => '300.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -466,12 +468,112 @@ class V2500Stage4SentenceSeeder extends Seeder
             // R301 - R200
             [
                 'section_id' => 196,
-                'word' => '',
+                'word' => 'care for 〜<br>ex1)I must <span class="border-b text-red-500">care for</span> my little brother this afternoon.<br>ex2)Would you <span class="border-b text-red-500">care for</span> some tea?',
                 'meaning' => json_encode([
-                    '',
-                    '',
+                    '〜の世話をする、[主に否定文・疑問文で]〜が好きだ、〜がほしい',
+                    '例1)今日の午後、私は弟<span class="border-b text-red-500">の世話をし</span>なければなりません。',
+                    '例2)お茶は<span class="border-b text-red-500">いかがですか</span>？',
                 ]),
-                'audio_url' => '300.mp3',
+                'audio_url' => '301.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 196,
+                'word' => 'cheer up (A)<br>ex)<span class="border-b text-red-500">Cheer up</span>! You can still win.',
+                'meaning' => json_encode([
+                    '元気を出す、A[人]を元気づける[励ます]',
+                    '例)<span class="border-b text-red-500">元気を出して</span>！ あなたたちはまだ勝てますよ。',
+                ]),
+                'audio_url' => '302.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 196,
+                'word' => 'clean up (〜)／clean 〜 up<br>ex)You must <span class="border-b text-red-500">clean up</span> your room.',
+                'meaning' => json_encode([
+                    '(〜を)きれいに掃除する、(〜を)片づける',
+                    '例)あなたは自分の部屋<span class="border-b text-red-500">をきれいに掃除し</span>なければなりません。',
+                ]),
+                'audio_url' => '303.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 196,
+                'word' => 'graduate from 〜<br>ex)He <span class="border-b text-red-500">graduated from</span> junior high school last year.',
+                'meaning' => json_encode([
+                    '〜を卒業する',
+                    '例)彼は去年中学校<span class="border-b text-red-500">を卒業しました</span>。',
+                ]),
+                'audio_url' => '304.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 196,
+                'word' => 'hear from 〜<br>ex)I <span class="border-b text-red-500">heard from</span> my friend in Germany.',
+                'meaning' => json_encode([
+                    '〜から便り[連絡]をもらう',
+                    '例)私はドイツにいる友だち<span class="border-b text-red-500">から便りをもらいました</span>。',
+                ]),
+                'audio_url' => '305.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 196,
+                'word' => 'sound like 〜<br>ex)That <span class="border-b text-red-500">sounds like</span> a good idea.',
+                'meaning' => json_encode([
+                    '〜のように思われる[聞こえる]',
+                    '例)それはいい考え<span class="border-b text-red-500">のように思われます</span>。',
+                ]),
+                'audio_url' => '306.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 196,
+                'word' => 'take part in 〜<br>ex)Did he <span class="border-b text-red-500">take part in</span> the contest?',
+                'meaning' => json_encode([
+                    '〜に参加する',
+                    '例)彼はコンテスト<span class="border-b text-red-500">に参加し</span>ましたか？',
+                ]),
+                'audio_url' => '307.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 196,
+                'word' => 'in addition<br>ex)It will cost too much. <span class="border-b text-red-500">In addition</span>, there are some problems with our plan itself.',
+                'meaning' => json_encode([
+                    'さらに、その上',
+                    '例)それには費用がかかりすぎます。<span class="border-b text-red-500">さらに</span>、私たちの計画自体にいくつか問題があります。',
+                ]),
+                'audio_url' => '308.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 196,
+                'word' => 'work on 〜<br>ex)We are <span class="border-b text-red-500">working on</span> the new project.',
+                'meaning' => json_encode([
+                    '〜に取り組む',
+                    '例)私たちは新しいプロジェクト<span class="border-b text-red-500">に取り組んでいる</span>ところです。',
+                ]),
+                'audio_url' => '309.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 196,
+                'word' => 'throw away 〜／throw 〜 away<br>ex)Don\'t <span class="border-b text-red-500">throw away</span> these boxes.',
+                'meaning' => json_encode([
+                    '〜を捨てる',
+                    '例)これらの箱<span class="border-b text-red-500">を捨て</span>ないで。',
+                ]),
+                'audio_url' => '310.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
