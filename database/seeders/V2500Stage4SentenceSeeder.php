@@ -577,284 +577,536 @@ class V2500Stage4SentenceSeeder extends Seeder
             //     'created_at' => date('Y-m-d H:i:s'),
             //     'updated_at' => date('Y-m-d H:i:s'),
             // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'wait for 〜<br>ex)I was <span class="border-b text-red-500">waiting for</span> him at the bus.',
+            //     'meaning' => json_encode([
+            //         '〜を待つ',
+            //         '例)私はバスの停留所で彼<span class="border-b text-red-500">を待って</span>いました。'
+            //     ]),
+            //     'audio_url' => '311.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'bring up 〜<br>ex1)I was born and <span class="border-b text-red-500">brought up</span> in Tokyo.<br>ex2)A new plan was <span class="border-b text-red-500">brought up</span> at the meeting.',
+            //     'meaning' => json_encode([
+            //         '〜を育てる、[問題など]〜を持ち出す',
+            //         '例1)私は生まれも<span class="border-b text-red-500">育ちも</span>東京です。',
+            //         '例2)新しい計画が会合で<span class="border-b text-red-500">提起され</span>ました。'
+            //     ]),
+            //     'audio_url' => '312.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'bring about 〜<br>ex)The Internet has <span class="border-b text-red-500">brought about</span> changes in our daily lives.',
+            //     'meaning' => json_encode([
+            //         '〜を引き起こす、もたらす',
+            //         '例)インターネットは私たちの日常生活に変化<span class="border-b text-red-500">をもたらし</span>ました。'
+            //     ]),
+            //     'audio_url' => '313.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'introduce A to B<br>ex)Please <span class="border-b text-red-500">introduce</span> yourself <span class="border-b text-red-500">to</span> everyone.',
+            //     'meaning' => json_encode([
+            //         'AをBに紹介する',
+            //         '例)みなさん<span class="border-b text-red-500">に</span>自己<span class="border-b text-red-500">紹介をし</span>てください。'
+            //     ]),
+            //     'audio_url' => '314.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'say hello[hi] to 〜<br>ex)Please <span class="border-b text-red-500">say hello to</span> Mike.',
+            //     'meaning' => json_encode([
+            //         '〜によろしくと言う',
+            //         '例)マイク<span class="border-b text-red-500">によろしくと言って</span>ください。'
+            //     ]),
+            //     'audio_url' => '315.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'spend A on B<br>ex)He <span class="border-b text-red-500">spends</span> a lot of money <span class="border-b text-red-500">on</span> video games.',
+            //     'meaning' => json_encode([
+            //         '[お金や時間]AをBに使う[費やす]',
+            //         '例)彼はたくさんのお金<span class="border-b text-red-500">を</span>テレビゲーム<span class="border-b text-red-500">に費やします</span>。'
+            //     ]),
+            //     'audio_url' => '316.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'get over 〜<br>ex)She hasn\'t <span class="border-b text-red-500">got over</span> the shock yet.',
+            //     'meaning' => json_encode([
+            //         '〜を乗り越える、〜から立ち直る、[病気など]〜を克服する',
+            //         '例)彼女はまだショック<span class="border-b text-red-500">から立ち直って</span>いません。'
+            //     ]),
+            //     'audio_url' => '317.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'suffer from 〜<br>ex)He is <span class="border-b text-red-500">suffering from</span> a bad cold.',
+            //     'meaning' => json_encode([
+            //         '〜で苦しむ',
+            //         '例)彼はひどい風邪<span class="border-b text-red-500">で苦しんで</span>います。'
+            //     ]),
+            //     'audio_url' => '318.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'fall asleep<br>ex)The baby <span class="border-b text-red-500">fell asleep</span> soon.',
+            //     'meaning' => json_encode([
+            //         '寝入る、眠り込む',
+            //         '例)その赤ん坊はすぐに<span class="border-b text-red-500">寝入りました</span>。'
+            //     ]),
+            //     'audio_url' => '319.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 196,
+            //     'word' => 'stay up<br>ex)Don\'t <span class="border-b text-red-500">stay up</span> late at night.',
+            //     'meaning' => json_encode([
+            //         '(寝ないで)起きている',
+            //         '例)<span class="border-b text-red-500">夜更しして</span>はいけません。'
+            //     ]),
+            //     'audio_url' => '320.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+
+            // // R321 - R340
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'find out 〜<br>ex)I <span class="border-b text-red-500">found out</span> that her name was Lucy.',
+            //     'meaning' => json_encode([
+            //         '〜を見つけ出す、発見する',
+            //         '例)私は彼女の名前がルーシーだと<span class="border-b text-red-500">わかりました</span>。'
+            //     ]),
+            //     'audio_url' => '321.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'hold on<br>ex1)May I speak to Aya, please? ー <span class="border-b text-red-500">Hold on</span>, please.<br>ex2)<span class="border-b text-red-500">Hold on</span> until help comes.',
+            //     'meaning' => json_encode([
+            //         '(電話を切らないで)待つ、持ちこたえる、がんばる',
+            //         '例1)彩さんをお願いします。ー<span class="border-b text-red-500">お待ち</span>下さい。',
+            //         '例2)助けが来るまで<span class="border-b text-red-500">がんばれ</span>。'
+            //     ]),
+            //     'audio_url' => '322.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'take off (〜)<br>ex1)Please <span class="border-b text-red-500">take off</span> youre shoes here.<br>ex2)Theire plane <span class="border-b text-red-500">took off</span> at 10 o\'clock.',
+            //     'meaning' => json_encode([
+            //         '〜を脱ぐ、取り外す、離陸する',
+            //         '例1)ここで靴<span class="border-b text-red-500">を脱いで</span>ください。',
+            //         '例2)彼らの飛行機は10時に<span class="border-b text-red-500">離陸しました</span>。'
+            //     ]),
+            //     'audio_url' => '323.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'put on 〜 / put 〜 on<br>ex)My aunt <span class="border-b text-red-500">put on</span> her new hat and went out.',
+            //     'meaning' => json_encode([
+            //         '〜を身につける、着る、[くつなど]〜をはく',
+            //         '例)私のおばは新しい帽子<span class="border-b text-red-500">をかぶって</span>出かけました。'
+            //     ]),
+            //     'audio_url' => '324.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'try on 〜 / try 〜 on<br>ex)Can I <span class="border-b text-red-500">try on</span> this shirt?',
+            //     'meaning' => json_encode([
+            //         '〜を試着する',
+            //         '例)このシャツ<span class="border-b text-red-500">を試着して</span>もいいですか？'
+            //     ]),
+            //     'audio_url' => '325.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'turn off 〜 / turn 〜 off<br>ex)<span class="border-b text-red-500">Turn off</span> the light when you go to bed.',
+            //     'meaning' => json_encode([
+            //         '[テレビ・明かりなど]〜を消す、[スイッチ]〜を切る',
+            //         '例)寝るときは明かり<span class="border-b text-red-500">を消し</span>なさい。'
+            //     ]),
+            //     'audio_url' => '326.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'put off 〜 / put 〜 off<br>ex)The game will be <span class="border-b text-red-500">put off</span> until next week.',
+            //     'meaning' => json_encode([
+            //         '〜を延期する',
+            //         '例)その試合は来週まで<span class="border-b text-red-500">延期さ</span>れるでしょう。'
+            //     ]),
+            //     'audio_url' => '327.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'put out 〜 / put 〜 out<br>ex)Don\'t forget to <span class="border-b text-red-500">put out</span> the fire.',
+            //     'meaning' => json_encode([
+            //         '[明かりなど]〜を消す',
+            //         '例)火を<span class="border-b text-red-500">消し</span>忘れないように。'
+            //     ]),
+            //     'audio_url' => '328.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'compare A with B<br>ex)I <span class="border-b text-red-500">compared</span> his picture <span class="border-b text-red-500">with</span> hers.',
+            //     'meaning' => json_encode([
+            //         'AをBと比較する[比べる]',
+            //         '例)私は彼の絵[写真]<span class="border-b text-red-500">と</span>彼女の絵[写真]を<span class="border-b text-red-500">比べました</span>。'
+            //     ]),
+            //     'audio_url' => '329.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'confuse A with B<br>ex)I often <span class="border-b text-red-500">confuse</span> Mary <span class="border-b text-red-500">with</span> her sister.',
+            //     'meaning' => json_encode([
+            //         'AをBと混同する',
+            //         '例)私はよくメアリーを彼女のお姉さん(妹さん)と<span class="border-b text-red-500">混同します</span>。'
+            //     ]),
+            //     'audio_url' => '330.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'pay for 〜 / pay 〜 for<br>ex)She <span class="border-b text-red-500">paid</span> 10,000 yen <span class="border-b text-red-500">for</span> the bag.',
+            //     'meaning' => json_encode([
+            //         '〜の代金を払う',
+            //         '例)彼女はそおんかばん<span class="border-b text-red-500">に</span>1万円<span class="border-b text-red-500">を払いました</span>。'
+            //     ]),
+            //     'audio_url' => '331.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'pick up 〜 / pick 〜 up<br>ex1)The girl <span class="border-b text-red-500">picked up</span> a coin.<br>ex2)My mother <span class="border-b text-red-500">picked</span> me <span class="border-b text-red-500">up</span> at the station.',
+            //     'meaning' => json_encode([
+            //         '〜を拾い上げる、取り上げる、〜を(車で)迎えに行く',
+            //         '例1)その女の子は硬貨<span class="border-b text-red-500">を拾いました</span>。',
+            //         '例2)私の母は車で駅まで私を<span class="border-b text-red-500">迎えに来てくれました</span>。'
+            //     ]),
+            //     'audio_url' => '332.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'protect A from B<br>ex)You should <span class="border-b text-red-500">protect</span> your eyes <span class="border-b text-red-500">from</span> the sun.',
+            //     'meaning' => json_encode([
+            //         'AをBから守る',
+            //         '例)あなたは目<span class="border-b text-red-500">を</span>太陽<span class="border-b text-red-500">から守る</span>べきです。'
+            //     ]),
+            //     'audio_url' => '333.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'keep in touch (with 〜)<br>ex)Let\'s <span class="border-b text-red-500">keep in touch</span>.',
+            //     'meaning' => json_encode([
+            //         '(〜と)連絡を取り続ける',
+            //         '例)<span class="border-b text-red-500">連絡を取り続け</span>ましょう。'
+            //     ]),
+            //     'audio_url' => '334.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
+            // [
+            //     'section_id' => 197,
+            //     'word' => 'make a mistake<br>ex)Don\'t be afraid of <span class="border-b text-red-500">making a mistake</span> when you speak English.',
+            //     'meaning' => json_encode([
+            //         '間違える',
+            //         '例)英語を話すとき、<span class="border-b text-red-500">間違えること</span>をこわがってはいけません。'
+            //     ]),
+            //     'audio_url' => '335.mp3',
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s'),
+            // ],
             [
-                'section_id' => 196,
-                'word' => 'wait for 〜<br>ex)I was <span class="border-b text-red-500">waiting for</span> him at the bus.',
+                'section_id' => 197,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜を待つ',
-                    '例)私はバスの停留所で彼<span class="border-b text-red-500">を待って</span>いました。'
+                    
                 ]),
-                'audio_url' => '311.mp3',
+                'audio_url' => '336.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 196,
-                'word' => 'bring up 〜<br>ex1)I was born and <span class="border-b text-red-500">brought up</span> in Tokyo.<br>ex2)A new plan was <span class="border-b text-red-500">brought up</span> at the meeting.',
+                'section_id' => 197,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜を育てる、[問題など]〜を持ち出す',
-                    '例1)私は生まれも<span class="border-b text-red-500">育ちも</span>東京です。',
-                    '例2)新しい計画が会合で<span class="border-b text-red-500">提起され</span>ました。'
+                    
                 ]),
-                'audio_url' => '312.mp3',
+                'audio_url' => '337.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 196,
-                'word' => 'bring about 〜<br>ex)The Internet has <span class="border-b text-red-500">brought about</span> changes in our daily lives.',
+                'section_id' => 197,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜を引き起こす、もたらす',
-                    '例)インターネットは私たちの日常生活に変化<span class="border-b text-red-500">をもたらし</span>ました。'
+                    
                 ]),
-                'audio_url' => '313.mp3',
+                'audio_url' => '338.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 196,
-                'word' => 'introduce A to B<br>ex)Please <span class="border-b text-red-500">introduce</span> yourself <span class="border-b text-red-500">to</span> everyone.',
+                'section_id' => 197,
+                'word' => '',
                 'meaning' => json_encode([
-                    'AをBに紹介する',
-                    '例)みなさん<span class="border-b text-red-500">に</span>自己<span class="border-b text-red-500">紹介をし</span>てください。'
+                    
                 ]),
-                'audio_url' => '314.mp3',
+                'audio_url' => '339.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 196,
-                'word' => 'say hello[hi] to 〜<br>ex)Please <span class="border-b text-red-500">say hello to</span> Mike.',
+                'section_id' => 197,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜によろしくと言う',
-                    '例)マイク<span class="border-b text-red-500">によろしくと言って</span>ください。'
+                    
                 ]),
-                'audio_url' => '315.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 196,
-                'word' => 'spend A on B<br>ex)He <span class="border-b text-red-500">spends</span> a lot of money <span class="border-b text-red-500">on</span> video games.',
-                'meaning' => json_encode([
-                    '[お金や時間]AをBに使う[費やす]',
-                    '例)彼はたくさんのお金<span class="border-b text-red-500">を</span>テレビゲーム<span class="border-b text-red-500">に費やします</span>。'
-                ]),
-                'audio_url' => '316.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 196,
-                'word' => 'get over 〜<br>ex)She hasn\'t <span class="border-b text-red-500">got over</span> the shock yet.',
-                'meaning' => json_encode([
-                    '〜を乗り越える、〜から立ち直る、[病気など]〜を克服する',
-                    '例)彼女はまだショック<span class="border-b text-red-500">から立ち直って</span>いません。'
-                ]),
-                'audio_url' => '317.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 196,
-                'word' => 'suffer from 〜<br>ex)He is <span class="border-b text-red-500">suffering from</span> a bad cold.',
-                'meaning' => json_encode([
-                    '〜で苦しむ',
-                    '例)彼はひどい風邪<span class="border-b text-red-500">で苦しんで</span>います。'
-                ]),
-                'audio_url' => '318.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 196,
-                'word' => 'fall asleep<br>ex)The baby <span class="border-b text-red-500">fell asleep</span> soon.',
-                'meaning' => json_encode([
-                    '寝入る、眠り込む',
-                    '例)その赤ん坊はすぐに<span class="border-b text-red-500">寝入りました</span>。'
-                ]),
-                'audio_url' => '319.mp3',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
-            ],
-            [
-                'section_id' => 196,
-                'word' => 'stay up<br>ex)Don\'t <span class="border-b text-red-500">stay up</span> late at night.',
-                'meaning' => json_encode([
-                    '(寝ないで)起きている',
-                    '例)<span class="border-b text-red-500">夜更しして</span>はいけません。'
-                ]),
-                'audio_url' => '320.mp3',
+                'audio_url' => '340.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
 
-            // R321 - R340
+            // R341 - R360
             [
-                'section_id' => 197,
-                'word' => 'find out 〜<br>ex)I <span class="border-b text-red-500">found out</span> that her name was Lucy.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜を見つけ出す、発見する',
-                    '例)私は彼女の名前がルーシーだと<span class="border-b text-red-500">わかりました</span>。'
+                    
                 ]),
-                'audio_url' => '321.mp3',
+                'audio_url' => '341.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'hold on<br>ex1)May I speak to Aya, please? ー <span class="border-b text-red-500">Hold on</span>, please.<br>ex2)<span class="border-b text-red-500">Hold on</span> until help comes.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '(電話を切らないで)待つ、持ちこたえる、がんばる',
-                    '例1)彩さんをお願いします。ー<span class="border-b text-red-500">お待ち</span>下さい。',
-                    '例2)助けが来るまで<span class="border-b text-red-500">がんばれ</span>。'
+                    
                 ]),
-                'audio_url' => '322.mp3',
+                'audio_url' => '342.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'take off (〜)<br>ex1)Please <span class="border-b text-red-500">take off</span> youre shoes here.<br>ex2)Theire plane <span class="border-b text-red-500">took off</span> at 10 o\'clock.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜を脱ぐ、取り外す、離陸する',
-                    '例1)ここで靴<span class="border-b text-red-500">を脱いで</span>ください。',
-                    '例2)彼らの飛行機は10時に<span class="border-b text-red-500">離陸しました</span>。'
+                    
                 ]),
-                'audio_url' => '323.mp3',
+                'audio_url' => '343.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'put on 〜 / put 〜 on<br>ex)My aunt <span class="border-b text-red-500">put on</span> her new hat and went out.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜を身につける、着る、[くつなど]〜をはく',
-                    '例)私のおばは新しい帽子<span class="border-b text-red-500">をかぶって</span>出かけました。'
+                    
                 ]),
-                'audio_url' => '324.mp3',
+                'audio_url' => '344.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'try on 〜 / try 〜 on<br>ex)Can I <span class="border-b text-red-500">try on</span> this shirt?',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜を試着する',
-                    '例)このシャツ<span class="border-b text-red-500">を試着して</span>もいいですか？'
+                    
                 ]),
-                'audio_url' => '325.mp3',
+                'audio_url' => '345.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'turn off 〜 / turn 〜 off<br>ex)<span class="border-b text-red-500">Turn off</span> the light when you go to bed.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '[テレビ・明かりなど]〜を消す、[スイッチ]〜を切る',
-                    '例)寝るときは明かり<span class="border-b text-red-500">を消し</span>なさい。'
+                    
                 ]),
-                'audio_url' => '326.mp3',
+                'audio_url' => '346.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'put off 〜 / put 〜 off<br>ex)The game will be <span class="border-b text-red-500">put off</span> until next week.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜を延期する',
-                    '例)その試合は来週まで<span class="border-b text-red-500">延期さ</span>れるでしょう。'
+                    
                 ]),
-                'audio_url' => '327.mp3',
+                'audio_url' => '347.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'put out 〜 / put 〜 out<br>ex)Don\'t forget to <span class="border-b text-red-500">put out</span> the fire.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '[明かりなど]〜を消す',
-                    '例)火を<span class="border-b text-red-500">消し</span>忘れないように。'
+                    
                 ]),
-                'audio_url' => '328.mp3',
+                'audio_url' => '348.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'compare A with B<br>ex)I <span class="border-b text-red-500">compared</span> his picture <span class="border-b text-red-500">with</span> hers.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    'AをBと比較する[比べる]',
-                    '例)私は彼の絵[写真]<span class="border-b text-red-500">と</span>彼女の絵[写真]を<span class="border-b text-red-500">比べました</span>。'
+                    
                 ]),
-                'audio_url' => '329.mp3',
+                'audio_url' => '349.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'confuse A with B<br>ex)I often <span class="border-b text-red-500">confuse</span> Mary <span class="border-b text-red-500">with</span> her sister.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    'AをBと混同する',
-                    '例)私はよくメアリーを彼女のお姉さん(妹さん)と<span class="border-b text-red-500">混同します</span>。'
+                    
                 ]),
-                'audio_url' => '330.mp3',
+                'audio_url' => '350.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'pay for 〜 / pay 〜 for<br>ex)She <span class="border-b text-red-500">paid</span> 10,000 yen <span class="border-b text-red-500">for</span> the bag.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜の代金を払う',
-                    '例)彼女はそおんかばん<span class="border-b text-red-500">に</span>1万円<span class="border-b text-red-500">を払いました</span>。'
+                    
                 ]),
-                'audio_url' => '331.mp3',
+                'audio_url' => '351.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'pick up 〜 / pick 〜 up<br>ex1)The girl <span class="border-b text-red-500">picked up</span> a coin.<br>ex2)My mother <span class="border-b text-red-500">picked</span> me <span class="border-b text-red-500">up</span> at the station.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '〜を拾い上げる、取り上げる、〜を(車で)迎えに行く',
-                    '例1)その女の子は硬貨<span class="border-b text-red-500">を拾いました</span>。',
-                    '例2)私の母は車で駅まで私を<span class="border-b text-red-500">迎えに来てくれました</span>。'
+                    
                 ]),
-                'audio_url' => '332.mp3',
+                'audio_url' => '352.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'protect A from B<br>ex)You should <span class="border-b text-red-500">protect</span> your eyes <span class="border-b text-red-500">from</span> the sun.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    'AをBから守る',
-                    '例)あなたは目<span class="border-b text-red-500">を</span>太陽<span class="border-b text-red-500">から守る</span>べきです。'
+                    
                 ]),
-                'audio_url' => '333.mp3',
+                'audio_url' => '353.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'keep in touch (with 〜)<br>ex)Let\'s <span class="border-b text-red-500">keep in touch</span>.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '(〜と)連絡を取り続ける',
-                    '例)<span class="border-b text-red-500">連絡を取り続け</span>ましょう。'
+                    
                 ]),
-                'audio_url' => '334.mp3',
+                'audio_url' => '354.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'section_id' => 197,
-                'word' => 'make a mistake<br>ex)Don\'t be afraid of <span class="border-b text-red-500">making a mistake</span> when you speak English.',
+                'section_id' => 198,
+                'word' => '',
                 'meaning' => json_encode([
-                    '間違える',
-                    '例)英語を話すとき、<span class="border-b text-red-500">間違えること</span>をこわがってはいけません。'
+                    
                 ]),
-                'audio_url' => '335.mp3',
+                'audio_url' => '355.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 198,
+                'word' => '',
+                'meaning' => json_encode([
+                    
+                ]),
+                'audio_url' => '356.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 198,
+                'word' => '',
+                'meaning' => json_encode([
+                    
+                ]),
+                'audio_url' => '357.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 198,
+                'word' => '',
+                'meaning' => json_encode([
+                    
+                ]),
+                'audio_url' => '358.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 198,
+                'word' => '',
+                'meaning' => json_encode([
+                    
+                ]),
+                'audio_url' => '359.mp3',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'section_id' => 198,
+                'word' => '',
+                'meaning' => json_encode([
+                    
+                ]),
+                'audio_url' => '360.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
