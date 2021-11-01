@@ -860,9 +860,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             // ],
             [
                 'section_id' => 197,
-                'word' => '',
+                'word' => 'by mistake<br>ex)I\'ve taken someone\'s shoes <span class="border-b text-red-500">by mistake</span>.',
                 'meaning' => json_encode([
-                    
+                    '間違って、誤って',
+                    '例)私は<span class=""border-b text-red-500"">間違って</span>誰かのくつをはいてきてしまいました。'
                 ]),
                 'audio_url' => '336.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -870,9 +871,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 197,
-                'word' => '',
+                'word' => 'by chance<br>ex)I met her <span class="border-b text-red-500">by chance</span> at the station.',
                 'meaning' => json_encode([
-                    
+                    '偶然に、たまたま',
+                    '例)私は駅で<span class="border-b text-red-500">偶然に</span>彼女に会いました。'
                 ]),
                 'audio_url' => '337.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -880,9 +882,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 197,
-                'word' => '',
+                'word' => 'for free<br>ex)I got this old computer <span class="border-b text-red-500">for free</span> from my aunt.',
                 'meaning' => json_encode([
-                    
+                    '無料で、ただで',
+                    '例)私はこの古いコンピュータをおばから<span class="border-b text-red-500">無料で</span>もらいました。'
                 ]),
                 'audio_url' => '338.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -890,9 +893,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 197,
-                'word' => '',
+                'word' => 'little by little<br>ex)She is getting better <span class="border-b text-red-500">little by little</span>.',
                 'meaning' => json_encode([
-                    
+                    '少しずつ、徐々に',
+                    '例)彼女は<span class="border-b text-red-500">少しずつ</span>よくなってます。'
                 ]),
                 'audio_url' => '339.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -900,9 +904,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 197,
-                'word' => '',
+                'word' => 'on the phone<br>ex)I sometimes talk with him <span class="border-b text-red-500">on the phone</span>.',
                 'meaning' => json_encode([
-                    
+                    '電話で',
+                    '例)私はときどき彼と<span class="border-b text-red-500">電話で</span>話します。'
                 ]),
                 'audio_url' => '340.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -912,9 +917,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             // R341 - R360
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'in (a) line<br>ex)Many people were waiting <span class="border-b text-red-500">in line</span> for the last bus.',
                 'meaning' => json_encode([
-                    
+                    '一列になって、並んで',
+                    '例)たくさんの人々が<span class="border-b text-red-500">並んで</span>最終バスを待っていました。'
                 ]),
                 'audio_url' => '341.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -922,9 +928,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'in all<br>ex)How many subjects do you study <span class="border-b text-red-500">in all</span>?',
                 'meaning' => json_encode([
-                    
+                    '全部で',
+                    '例)あなたは<span class="border-b text-red-500">全部で</span>いくつの教科を勉強していますか？'
                 ]),
                 'audio_url' => '342.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -932,9 +939,11 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => '(in) this way<br>ex1)<span class="border-b text-red-500">In this way</span>, he improved his English skill.<br>ex2)Do it <span class="border-b text-red-500">this way</span>.',
                 'meaning' => json_encode([
-                    
+                    'このようにして',
+                    '例1)<span class="border-b text-red-500">このようにして</span>、彼は英語力を上達させました。',
+                    '例2)それを<span class="border-b text-red-500">こにょうにして</span>やってごらん。'
                 ]),
                 'audio_url' => '343.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -942,9 +951,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'in other words<br>ex)<span class="border-b text-red-500">In other words</span>, you were lucky.',
                 'meaning' => json_encode([
-                    
+                    '言いかえると',
+                    '例)<span class="border-b text-red-500">言いかえると</span>、あなたは幸運だったということです。'
                 ]),
                 'audio_url' => '344.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -952,9 +962,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'not only A but (also) B<br>ex)I bought her <span class="border-b text-red-500">not only</span> a card <span class="border-b text-red-500">but also</span> a small present.',
                 'meaning' => json_encode([
-                    
+                    'AでなくBも',
+                    '例)私は彼女にカード<span class="border-b text-red-500">だけでなく</span>ささやかなプレゼント<span class="border-b text-red-500">も</span>買いました。'
                 ]),
                 'audio_url' => '345.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -962,9 +973,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'first of all<br>ex)<span class="border-b text-red-500">First of all</span>, we have to finish our homework.',
                 'meaning' => json_encode([
-                    
+                    'まず第一に',
+                    '例)<span class="border-b text-red-500">まず第一に</span>、私たちは宿題を終わらせなければなりません。'
                 ]),
                 'audio_url' => '346.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -972,9 +984,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'after all<br>ex)The train left ten minutes late, but it arrived on time <span class="border-b text-red-500">after all</span>.',
                 'meaning' => json_encode([
-                    
+                    '結局(は)',
+                    '例)電車は10分遅れて出発しましたが、<span class="border-b text-red-500">結局</span>時間通りに到着しました。'
                 ]),
                 'audio_url' => '347.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -982,9 +995,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'get married<br>ex)They will <span class="border-b text-red-500">get married</span> next month.',
                 'meaning' => json_encode([
-                    
+                    '結婚する',
+                    '例)彼らは来月<span class="border-b text-red-500">結婚します</span>。'
                 ]),
                 'audio_url' => '348.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -992,9 +1006,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'a great[large] number of 〜<br>ex)<span class="border-b text-red-500">A great number of</span> foreign people visit Japan every year.',
                 'meaning' => json_encode([
-                    
+                    'とてもたくさん[多数]の〜',
+                    '例)<span class="border-b text-red-500">とてもたくさんの</span>外国人が毎年日本を訪れています。'
                 ]),
                 'audio_url' => '349.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1002,9 +1017,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'the number of 〜<br>ex)<span class="border-b text-red-500">The number of</span> foreign tourists visiting Japan is increasing.',
                 'meaning' => json_encode([
-                    
+                    '〜の数',
+                    '例)日本を訪れる外国人観光客<span class="border-b text-red-500">の数</span>が増えています。'
                 ]),
                 'audio_url' => '350.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1012,9 +1028,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'thousands of 〜<br>ex)My father has <span class="border-b text-red-500">thousands of</span> books.',
                 'meaning' => json_encode([
-                    
+                    '何千もの〜、多数の〜',
+                    '例)私の父は<span class="border-b text-red-500">数千冊の</span>本を持っています。'
                 ]),
                 'audio_url' => '351.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1022,9 +1039,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'millions of 〜<br>ex)<span class="border-b text-red-500">Millions of</span> people came to the festival.',
                 'meaning' => json_encode([
-                    
+                    '何百万もの〜',
+                    '例)<span class="border-b text-red-500">何百万という</span>人がその祭りに来ました。'
                 ]),
                 'audio_url' => '352.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1032,9 +1050,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'again and again<br>ex)The man knocked on the door <span class="border-b text-red-500">again and again</span>.',
                 'meaning' => json_encode([
-                    
+                    '何度も何度も',
+                    '例)その男の人は<span class="border-b text-red-500">何度も何度も</span>ドアをたたきました。'
                 ]),
                 'audio_url' => '353.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1042,9 +1061,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'all the time<br>ex)She smiled <span class="border-b text-red-500">all the time</span>.',
                 'meaning' => json_encode([
-                    
+                    'いつも、常に、その間ずっと',
+                    '例)彼女は<span class="border-b text-red-500">いつも</span>ほほえんでいました。'
                 ]),
                 'audio_url' => '354.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1052,9 +1072,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'all year round<br>ex)You can see beautiful flowers <span class="border-b text-red-500">all year round</span> here.',
                 'meaning' => json_encode([
-                    
+                    '1年中',
+                    '例)ここでは美しい花を<span class="border-b text-red-500">1年中</span>見ることができます。'
                 ]),
                 'audio_url' => '355.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1062,9 +1083,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'from now on<br>ex)I\'ll do my best <span class="border-b text-red-500">from now on</span>.',
                 'meaning' => json_encode([
-                    
+                    'これからは、今後',
+                    '例)<span class="border-b text-red-500">これからは</span>私は最善を尽くします。'
                 ]),
                 'audio_url' => '356.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1072,9 +1094,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'in time<br>ex)We were <span class="border-b text-red-500">in time</span> for the bus.',
                 'meaning' => json_encode([
-                    
+                    'やがて、間に合って',
+                    '例)私たちはそのバスに<span class="border-b text-red-500">間に合い</span>ました。'
                 ]),
                 'audio_url' => '357.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1082,9 +1105,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'once more<br>ex)Why don\'t you try <span class="border-b text-red-500">once more</span>?',
                 'meaning' => json_encode([
-                    
+                    'もう1度[1回]、再び',
+                    '例)<span class="border-b text-red-500">もう1度</span>やってみたらどうですか？'
                 ]),
                 'audio_url' => '358.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1092,9 +1116,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'one\'s point of view<br>ex)From <span class="border-b text-red-500">my point of view</span>, this idea can solve the problem.',
                 'meaning' => json_encode([
-                    
+                    '〜の観点、〜の見解',
+                    '例)<span class="border-b text-red-500">私の見解</span>では、このアイデアはその問題を解決できます。'
                 ]),
                 'audio_url' => '359.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
@@ -1102,9 +1127,10 @@ class V2500Stage4SentenceSeeder extends Seeder
             ],
             [
                 'section_id' => 198,
-                'word' => '',
+                'word' => 'What\'s the matter (with you) ?<br>ex)You don\'t look well. <span class="border-b text-red-500">What\'s the matter</span>?',
                 'meaning' => json_encode([
-                    
+                    'どうしたのですか？',
+                    '例)調子がよくなさそうですね。<span class="border-b text-red-500">どうしたのですか</span>？'
                 ]),
                 'audio_url' => '360.mp3',
                 'created_at' => date('Y-m-d H:i:s'),
