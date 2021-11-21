@@ -100,7 +100,7 @@ export default defineComponent({
       type: Number,
     }
   },
-  
+
   data() {
     return {
       answerTime: 0,

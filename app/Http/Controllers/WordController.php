@@ -9,45 +9,47 @@ use Inertia\Inertia;
 
 class WordController extends Controller
 {
-    // /**
-    //  * 単語 → 意味
-    //  *
-    //  * @param Request $request
-    //  * @param integer $sectionlId
-    //  * @return void
-    //  */
-    // public function w2m(Request $request, $sectionlId)
-    // {
-    //     $this->index($request, $sectionlId, 'w2m');
-    // }
-
-    // /**
-    //  * 意味 → 単語
-    //  *
-    //  * @param Request $request
-    //  * @param integer $sectionlId
-    //  * @return void
-    //  */
-    // public function m2w(Request $request, $sectionlId)
-    // {
-    //     $this->index($request, $sectionlId, 'm2w');
-    // }
-
     /**
-     * セクションをキーにランダムに単語データを取得
+     * 単語表示
      *
      * @param Request $request
-     * @param integer $mode
-     * @param integer $sectionlId
-     * @param integer $answerdWordId
+     * @param int $mode
+     * @param int $sectionlId
+     * @param int $answerdWordId
      * @param float $answerTime
      * @param boolean $isCorrect
      * @return void
      */
     public function index(Request $request, $mode, $sectionlId, $answerdWordId = null, $answerTime = null, $isCorrect = null)
     {
+        switch ($mode) {
+            // 単語→意味
+            case 1:
+            // 意味→単語
+            case 2:
+                return $this->renderWord($request, $mode, $sectionlId, $answerdWordId, $answerTime, $isCorrect);
+            // 一覧表示
+            case 3:
+                return $this->renderWordList($request, $mode, $sectionlId);
+        }
+    }
+
+    /**
+     * 単語表示
+     * セクションをキーにランダムに単語データを取得
+     *
+     * @param Request $request
+     * @param int $mode
+     * @param int $sectionlId
+     * @param int $answerdWordId
+     * @param float $answerTime
+     * @param boolen $isCorrect
+     * @return void
+     */
+    private function renderWord(Request $request, $mode, $sectionlId, $answerdWordId = null, $answerTime = null, $isCorrect = null)
+    {
         // 回答ログに保存
-        $this->saveAnswerLog($answerdWordId,$mode, $answerTime, $isCorrect);
+        $this->saveAnswerLog($answerdWordId, $mode, $answerTime, $isCorrect);
 
         // セッションから取得
         $words = $request->session()->get('words');
@@ -56,10 +58,14 @@ class WordController extends Controller
         if (empty($words)) {
             $words = DB::table('words')
                 ->select(
-                    'tangos.id as tango_id', 'tangos.title as tango_title',
-                    'levels.id as level_id','levels.title as level_title',
-                    'sections.id as section_id','sections.title as section_title',
-                    'words.*'
+                    'tangos.id as tango_id',
+                    'tangos.title as tango_title',
+                    'levels.id as level_id',
+                    'levels.title as level_title',
+                    'sections.id as section_id',
+                    'sections.title as section_title',
+                    'words.*',
+                    DB::raw('CONCAT("/audio/tango_", tangos.id, "/level_", levels.id, "/", words.audio_url) as audio_url')
                 )
                 ->join('sections', 'sections.id', '=', 'words.section_id')
                 ->join('levels', 'levels.id', '=', 'sections.level_id')
@@ -78,13 +84,47 @@ class WordController extends Controller
         // 残りの単語をセッションに保存
         $request->session()->put('words', $words);
 
-        // 音声ファイルのURL生成
-        $word->audio_url = sprintf('/audio/tango_%d/level_%d/%s', $word->tango_id, $word->level_id, $word->audio_url);
-
         // 対象の単語が過去に間違ったことがあるか？
         list($correctCount, $incorrectCount) = $this->getCorrectCount($word->id, $mode);
 
         return Inertia::render('Word/Index', ['word' => $word, 'mode' => $mode, 'correctCount' => $correctCount, 'incorrectCount' => $incorrectCount]);
+    }
+
+    /**
+     * 単語一覧表示
+     * 対象のセクションにあるすべての単語を一覧表示
+     *
+     * @param Request $request
+     * @param int $mode
+     * @param int $sectionlId
+     * @return void
+     */
+    private function renderWordList(Request $request, $mode, $sectionlId)
+    {
+        $words = DB::table('words')
+            ->select(
+                'tangos.id as tango_id',
+                'tangos.title as tango_title',
+                'levels.id as level_id',
+                'levels.title as level_title',
+                'sections.id as section_id',
+                'sections.title as section_title',
+                'words.*',
+                DB::raw('CONCAT("/audio/tango_", tangos.id, "/level_", levels.id, "/", words.audio_url) as audio_url')
+            )
+            ->join('sections', 'sections.id', '=', 'words.section_id')
+            ->join('levels', 'levels.id', '=', 'sections.level_id')
+            ->join('tangos', 'tangos.id', '=', 'levels.tango_id')
+            ->join('user_tangos', 'tangos.id', '=', 'user_tangos.tango_id')
+            ->where('user_tangos.user_id', Auth::id())
+            ->where('words.section_id', $sectionlId)
+            ->get()
+            ->all();
+
+        return Inertia::render(
+            'Word/List',
+            ['words' => $words, 'word0' => $words[0], 'mode' => $mode]
+        );
     }
 
     /**
